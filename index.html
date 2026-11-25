@@ -1,0 +1,602 @@
+<!doctype html>
+<html lang="ko" id="top">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="엘리베이트 리쥬글래스 PDRN. 콜라겐과 비타민 C를 담은 30포 스틱 제품을 만나보세요."><meta name="theme-color" content="#faf8f6"><title>ELIVATE | 리쥬글래스 PDRN</title><style>@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&family=Noto+Serif+KR:wght@400;500;600&family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@1&display=swap');
+:root{--ink:#281e24;--muted:#655860;--paper:#faf8f6;--line:#dbd1d3;--pink:#a33c62;--sans:"DM Sans","Noto Sans KR",sans-serif;--serif:"Noto Serif KR",serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:85px}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.75 var(--sans);word-break:keep-all}a{color:inherit;text-decoration:none}button{font:inherit;color:inherit;cursor:pointer}img{display:block;max-width:100%;height:auto}h1,h2,h3,p,figure,dl,dd{margin:0}a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--pink);outline-offset:4px}.wrap{width:min(1160px,calc(100% - 112px));margin-inline:auto}
+.header{height:76px;padding:0 5%;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;background:var(--paper);position:sticky;top:0;z-index:5;border-bottom:1px solid #39252c16}.wordmark{font-size:25px;font-weight:700;letter-spacing:.26em;line-height:1}.header nav{display:flex;gap:38px;font-size:14px}.header a:hover{color:var(--pink)}.head-link{justify-self:end;font-size:14px;border-bottom:1px solid currentColor}
+.hero{min-height:680px;min-height:clamp(620px,calc(100svh - 76px),840px);display:grid;grid-template-columns:43% 57%;position:relative;isolation:isolate;overflow:hidden;background:linear-gradient(110deg,#f8eeef 0%,#f4e4e8 53%,#e7bbc9 100%)}.hero-copy{align-self:center;z-index:1;padding:0 0 48px max(9vw,48px)}.eyebrow{font-weight:700;letter-spacing:.23em;font-size:13px;color:var(--pink);margin-bottom:21px}.hero h1{font:500 clamp(46px,5.25vw,90px)/1.23 var(--serif);letter-spacing:-.09em;white-space:nowrap}.hero h1 em{color:var(--pink);font-style:normal}.intro{margin:26px 0 34px;color:#53444e}.button{display:inline-flex;justify-content:center;align-items:center;min-height:50px;padding:0 27px;background:#30222a;color:white;font-size:14px;transition:background .2s}.button:hover{background:#773750}.hero-art{position:relative;display:grid;place-items:center;min-width:0;isolation:isolate}.hero-art span{position:absolute;top:8%;right:4%;font:italic clamp(94px,16vw,240px)/1 "Instrument Serif",Georgia,serif;color:#fff8f8b0;white-space:nowrap;letter-spacing:-.055em;z-index:-1}.hero-art img{width:min(96%,690px);mix-blend-mode:multiply;transform:translate(-1%,3%)}.hero-index{position:absolute;bottom:0;left:5%;right:5%;display:flex;justify-content:space-between;border-top:1px solid #65485346;padding:15px 0;font-size:12px;letter-spacing:.16em;color:#65505a}
+.product{display:grid;grid-template-columns:1.13fr .87fr;gap:clamp(36px,8vw,120px);align-items:center;padding-block:112px}.main-photo{background:#f1eae9;aspect-ratio:1;overflow:hidden}.main-photo img{width:100%;mix-blend-mode:multiply}.thumbs{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin-top:10px}.thumbs button{border:1px solid transparent;background:#f2eceb;padding:4px 4px 7px;font-size:13px}.thumbs button:hover,.thumbs [aria-pressed=true]{border-color:#a33c62}.thumbs img{width:100%;height:clamp(50px,6vw,88px);object-fit:contain;mix-blend-mode:multiply}.product h2,.guide h2,.formula h2{font:500 clamp(40px,5vw,72px)/1.18 var(--serif);letter-spacing:-.075em}.product-copy>p:not(.eyebrow){margin:24px 0;color:var(--muted);max-width:320px}.spec{margin:28px 0}.spec div{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-top:1px solid var(--line);font-size:14px}.spec div:last-child{border-bottom:1px solid var(--line)}.spec dt{color:var(--muted)}.under-link{display:inline-block;border-bottom:1px solid currentColor;font-size:14px}.under-link:hover{color:var(--pink)}
+.formula{background:#33242d;color:#fff7f8;padding:92px 0 98px}.formula .eyebrow{color:#f5b8cd}.formula h2{font-size:clamp(34px,4vw,58px)}.formula-grid{display:grid;grid-template-columns:repeat(3,1fr);margin-top:44px}.formula article{border-top:1px solid #f8e1e463;padding:23px 16px 0 0}.formula article+article{padding-left:22px;border-left:1px solid #f8e1e463}.formula h3{font-size:15px;font-weight:500}.formula article>p:last-child:not(.ingredients){color:#ebd9e0;font-size:14px}.metric{color:#f8c1d3;font-size:clamp(36px,5vw,68px);line-height:1.35;letter-spacing:-.06em}.metric small{font-size:.37em;letter-spacing:0}.ingredients{margin-top:17px;color:#f8c1d3;font-size:18px}
+.guide{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:end;padding:100px 0 82px;border-bottom:1px solid var(--line)}.guide div+div{max-width:360px;color:var(--muted)}.guide div+div p+p{margin-top:13px}.details{padding:66px 0 100px}.details h2{font:500 36px var(--serif);letter-spacing:-.07em;margin-bottom:25px}.details details{padding:0 0 0;border-top:1px solid var(--line)}.details details:last-child{border-bottom:1px solid var(--line)}.details summary{cursor:pointer;font-weight:600;padding:16px 0;display:flex;justify-content:space-between;align-items:center;list-style:none}.details summary::-webkit-details-marker{display:none}.details summary:after{content:'+';font-size:23px;font-weight:400}.details details[open] summary:after{content:'−'}.details details p,.details table{color:var(--muted);margin-bottom:24px}.details details .under-link{margin-bottom:22px}.details table{width:min(100%,560px);border-collapse:collapse}.details caption{text-align:left;margin-bottom:5px}.details th,.details td{text-align:left;font-weight:400;padding:5px 0;border-bottom:1px solid var(--line)}.details td{text-align:right}
+footer{background:#ecdee3}.foot{min-height:150px;display:flex;justify-content:space-between;align-items:center;gap:20px}.foot p{color:var(--muted);font-size:12px;letter-spacing:.15em;margin-top:10px}
+@media(max-width:800px){.wrap{width:calc(100% - 48px)}.header{height:65px;padding-inline:24px}.wordmark{font-size:20px}.header nav{gap:18px}.hero-copy{padding-left:32px}.hero{min-height:560px}.hero h1{font-size:clamp(39px,6.3vw,56px)}.product{gap:30px;padding-block:68px}}
+@media(max-width:575px){html{scroll-padding-top:70px}.header{grid-template-columns:auto 1fr;gap:16px;padding-inline:18px}.header nav{justify-content:end;gap:13px;font-size:13px}.head-link{display:none}.hero{grid-template-columns:1fr;min-height:0}.hero-copy{padding:43px 24px 0}.hero h1{font-size:clamp(42px,10vw,58px)}.eyebrow{margin-bottom:14px}.intro{margin:15px 0 18px;font-size:15px}.button{min-height:44px;padding-inline:21px}.hero-art{margin:0 0 42px}.hero-art span{top:-6%;right:5%;font-size:26vw}.hero-art img{width:min(85%,400px);transform:none}.hero-index{left:24px;right:24px;letter-spacing:.09em;padding:10px 0;font-size:11px}.product,.guide{grid-template-columns:1fr}.product{gap:32px;padding-block:55px 64px}.formula{padding-block:60px}.formula-grid{grid-template-columns:1fr;margin-top:28px}.formula article,.formula article+article{border-left:0;padding:16px 0 20px}.ingredients{margin-top:9px}.guide{padding:62px 0 48px;gap:21px}.details{padding:48px 0 65px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+.hero-art{overflow:hidden;margin:0}.hero-art span{display:none}.hero-art img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover;object-position:61% center;mix-blend-mode:normal;transform:none}.hero-index{right:57%;gap:8px;flex-wrap:wrap;font-size:11px}.hero-index span:last-child{display:none}.main-photo img,.thumbs img{mix-blend-mode:normal}.hero{background:#f5e8eb}
+@media(max-width:575px){.hero-art{aspect-ratio:1.35;margin:24px 0 0}.hero-index{display:none}}
+.el-film{background:var(--paper);line-height:0}.el-film video{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;max-height:calc(100vh - 76px);opacity:.62}
+video.film-photo{filter:none;transform:none}
+</style><style>.product{align-items:start;padding-block:60px 66px;gap:clamp(30px,6vw,100px)}.product h1{font:600 clamp(34px,4vw,57px)/1.14 var(--serif);letter-spacing:-.08em}.product-copy>p:not(.eyebrow){margin:14px 0 20px;max-width:none}.price{display:flex;align-items:center;gap:12px;border-bottom:1px solid var(--line);padding-bottom:18px}.price strong{font-size:31px}.price span,.demo-note{color:var(--muted);font-size:13px}.order{display:grid;gap:12px;padding-top:18px}.order label{font-size:14px;font-weight:600}.order select{width:100%;min-height:48px;background:white;border:1px solid var(--line);padding:0 12px;color:var(--ink);font:inherit}.order-row{display:flex;justify-content:space-between;align-items:center;gap:10px}.stepper{display:flex;align-items:center;border:1px solid var(--line);background:white}.stepper button{width:42px;height:38px;border:none;background:transparent}.stepper output{min-width:32px;text-align:center}.total{border-top:1px solid var(--line);padding-top:10px}.total strong{color:var(--pink);font-size:24px}.actions{display:flex;gap:9px}.actions button{flex:1;min-height:48px;background:white;border:1px solid var(--ink);padding:6px 12px}.actions button:last-child{background:var(--ink);color:white}.actions button:hover{outline:1px solid var(--pink);outline-offset:2px}.cart-link{display:block;background:none;border:0;padding:0;white-space:nowrap}.cart-link span{background:#edd6df;color:#782649;border-radius:20px;padding:2px 6px}.detail-nav{position:sticky;top:76px;z-index:4;background:var(--paper);border-block:1px solid var(--line)}.detail-nav .wrap{display:grid;grid-template-columns:repeat(4,1fr);text-align:center}.detail-nav a{padding:14px 0;font-size:14px}.detail-nav a:hover{color:var(--pink)}main section{scroll-margin-top:52px}.story{text-align:center;padding:74px 0}.story h2,.faq h2{font:500 clamp(34px,5vw,65px)/1.24 var(--serif);letter-spacing:-.074em}.story>p:not(.eyebrow){margin:20px auto 27px;color:var(--muted)}.story img{width:100%;max-height:620px;object-fit:cover}.faq{padding-top:55px}.faq h2{font-size:34px;margin-bottom:21px}.faq details{border-top:1px solid var(--line);padding:12px 0}.faq summary{cursor:pointer}.faq details p{margin:10px 0;color:var(--muted)}.business{font-size:13px;color:var(--muted);margin:8px 0}.details details{padding-inline:2px}dialog{width:min(500px,calc(100% - 28px));background:var(--paper);color:var(--ink);padding:30px;border:1px solid var(--line)}dialog::backdrop{background:#24151db0}dialog .demo-note{margin:16px 0}dialog .close{float:right;border:0;background:none;font-size:24px}dialog h2{font-size:25px;margin-bottom:10px}.cart-row{display:flex;justify-content:space-between;align-items:center;gap:10px;border-bottom:1px solid var(--line);padding:8px 0}.cart-row button{background:none;border:0;text-decoration:underline;font-size:13px}.stepper button:disabled{opacity:.35;cursor:default}
+@media(max-width:800px){.detail-nav{top:65px}}@media(max-width:575px){.header nav{display:none}.cart-link{display:block;justify-self:end}.product{padding-top:22px}.story{padding:48px 0}.story img{aspect-ratio:1.3;object-fit:cover}.detail-nav a{font-size:13px}}
+
+.pack-story{padding-bottom:36px}.pack-facts{margin:28px auto 0;display:grid;grid-template-columns:repeat(3,1fr);max-width:650px;border-block:1px solid var(--line)}.pack-facts div{padding:18px 3px}.pack-facts div+div{border-left:1px solid var(--line)}.pack-facts dt{font-size:14px;color:var(--muted)}.pack-facts dd{font-size:24px;font-weight:600}
+</style><style>:root{--campaign:url('assets/campaign-product.webp')}
+:root{--paper:#f8f5f1;--ink:#292025;--line:#ddd2d3;--pink:#a13f5d}
+[hidden]{display:none!important}.brand-hero{position:relative;isolation:isolate;min-height:min(740px,82svh);display:grid;align-items:center;background:#e6d7d2;overflow:hidden}.brand-hero::before{content:'';position:absolute;inset:0;z-index:-2;background:var(--campaign) 67% 53%/cover no-repeat}.brand-hero::after{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#f2e7e5 1%,#f2e7e5eb 28%,#f2e7e513 64%,transparent 78%)}.brand-hero-inner{padding:70px 0 80px max(7vw,48px);max-width:60%}.brand-kicker{font-size:13px;font-weight:700;letter-spacing:.19em;color:#823650}.brand-hero h1,.brand-story h2{font:500 clamp(48px,6.5vw,105px)/1.17 var(--serif);letter-spacing:-.085em;margin:18px 0 22px}.brand-hero-inner>p:not(.brand-kicker){color:#493941;margin-bottom:28px}.brand-button{display:inline-block;background:#2c2026;color:white;padding:13px 23px;font-size:14px}.brand-button:hover{background:#80304d}.brand-story{display:grid;align-items:end;grid-template-columns:1fr 1fr;gap:45px;padding-block:95px}.brand-story h2{font-size:clamp(38px,5vw,72px);margin-bottom:0}.brand-story div+div{max-width:425px;color:var(--muted)}.brand-story div+div p+p{margin-top:12px}.brand-collection{padding:0 0 84px}.collection-grid{display:grid;grid-template-columns:1fr .8fr;gap:22px;align-items:stretch}.product-tile{background:#efe4e4;overflow:hidden;display:grid;grid-template-columns:1.07fr .93fr;align-items:center}.product-tile img,.brand-texture img{width:100%;height:100%;object-fit:cover}.product-tile>div{padding:20px}.product-tile h2{font-size:clamp(20px,2.7vw,33px);line-height:1.2;margin:8px 0}.product-tile span{display:inline-block;font-size:14px;margin-top:18px;border-bottom:1px solid currentColor}.product-tile:hover span{color:var(--pink)}.brand-texture{min-height:280px;overflow:hidden}.breadcrumb{display:flex;gap:10px;align-items:center;flex-wrap:wrap;padding-top:25px;font-size:13px;color:var(--muted)}.breadcrumb+.product{padding-top:22px}.ingredient-notes{padding-top:35px}.ingredient-notes h2{font:500 clamp(30px,4vw,50px)/1.2 var(--serif);letter-spacing:-.06em;margin-bottom:20px}.ingredient-notes dl div{display:grid;grid-template-columns:1fr 1.8fr;gap:15px;padding:14px 0;border-top:1px solid var(--line)}.ingredient-notes dt{font-weight:600}.ingredient-notes dd{color:var(--muted)}
+@media(max-width:800px){.brand-hero{min-height:560px}.brand-hero-inner{padding-left:24px}.product-tile{grid-template-columns:1fr}.product-tile img{aspect-ratio:1.3}.brand-story{padding-block:66px}}
+@media(max-width:575px){.brand-hero{display:block;min-height:0;padding:0;background:#f2e7e5}.brand-hero::before{position:relative;display:block;aspect-ratio:1.45;background-position:65% center}.brand-hero::after{display:none}.brand-hero-inner{max-width:none;padding:30px 24px 38px}.brand-hero h1{font-size:clamp(43px,10vw,58px);margin:10px 0 15px}.brand-story,.collection-grid{grid-template-columns:1fr;gap:22px}.brand-story{padding-block:50px}.brand-texture{min-height:0;aspect-ratio:1.8}.brand-collection{padding-bottom:45px}.product-tile{grid-template-columns:1fr 1fr}.product-tile img{aspect-ratio:1}.product-tile>div{padding:14px}.ingredient-notes dl div{grid-template-columns:1fr;gap:3px}}
+
+
+:root{--paper:#f8f7f3;--ink:#262421;--muted:#625b57;--line:#dbd6cf;--pink:#963d59}
+.header{background:var(--paper)}.header .wordmark{letter-spacing:.20em}.header nav{gap:42px}.header .cart-link span{background:#efe1e3}
+.brand-hero{min-height:clamp(540px,calc(83svh - 55px),790px);align-items:end;background:#dfdbd6}.brand-hero::before{background-position:center 54%}.brand-hero::after{background:linear-gradient(90deg,#f4ece6 0%,#f4ece6ed 19%,#f4ece657 44%,transparent 64%)}.brand-hero-inner{padding:64px 0 77px max(7vw,40px);max-width:50%}.brand-kicker{color:#663b48;letter-spacing:.17em}.brand-hero h1,.brand-story h2{font-family:var(--sans);font-weight:500;letter-spacing:-.08em}.brand-hero h1{font-size:clamp(45px,5.45vw,84px);line-height:1.14}.brand-button{background:transparent;color:var(--ink);border:1px solid currentColor}.brand-button:hover{background:var(--ink);color:white}.brand-story{grid-template-columns:1.16fr .84fr;align-items:center;gap:clamp(32px,8vw,132px);padding-block:96px}.brand-story .brand-texture{min-height:0;aspect-ratio:1.25}.brand-story .brand-texture img{object-position:center 55%}.brand-story .brand-story-copy{max-width:100%;color:var(--ink)}.brand-story-copy h2{margin:12px 0 23px;font-size:clamp(32px,4vw,62px)}.brand-story-copy p:not(.brand-kicker){color:var(--muted)}.brand-collection{background:#eeebe5;padding-block:68px 86px}.collection-grid{grid-template-columns:.8fr 1.2fr;align-items:center;gap:clamp(24px,7vw,104px)}.collection-heading h2{font-size:clamp(27px,3.7vw,48px);font-weight:500;letter-spacing:-.07em;margin-top:8px;line-height:1.2}.product-tile{background:#f8f5ef}.product-tile img{aspect-ratio:1}.product-tile h2{font-weight:600}.product-tile span{margin-top:14px}.detail-nav{background:var(--paper)}.formula{background:#eae5de;color:var(--ink)}.formula .eyebrow,.formula .metric,.formula .ingredients{color:var(--pink)}.formula article,.formula article+article{border-color:#c9beb7}.formula article>p:last-child:not(.ingredients){color:var(--muted)}.story img{max-height:490px;object-position:50% 43%}footer{background:#eeeae4}.actions button:last-child{background:#33292e}
+@media(max-width:800px){.brand-hero-inner{padding-left:30px}.brand-story{padding-block:64px}.brand-collection{padding-block:48px 65px}.product-tile{grid-template-columns:1fr 1fr}}
+@media(max-width:575px){.brand-hero{min-height:0;background:#eee3df}.brand-hero::before{background-position:65% 50%}.brand-hero-inner{max-width:none;padding:29px 24px 38px}.brand-hero h1{font-size:clamp(39px,10vw,56px)}.brand-story,.collection-grid{grid-template-columns:1fr;gap:21px}.brand-story{padding-block:44px}.brand-story .brand-texture{aspect-ratio:1.65}.brand-collection{padding-block:37px 48px}.story img{aspect-ratio:1.4}}
+</style><noscript><style>#detail-view[hidden]{display:block}</style></noscript><style>
+.campaign{display:grid;grid-template-columns:43% 57%;background:#321b26;color:#fff7f5;min-height:clamp(480px,51vw,690px);overflow:hidden}.campaign-copy{padding:56px 22px 56px clamp(32px,7vw,112px);align-self:center}.campaign .brand-kicker{color:#f5b7cc}.campaign h1{font:600 clamp(46px,5.65vw,90px)/1.08 var(--sans);letter-spacing:-.086em;margin:24px 0}.campaign-copy>p:not(.brand-kicker){color:#f4e3e9;margin-bottom:28px}.campaign .brand-button{color:white}.campaign .brand-button:hover{background:#fff7f5;color:#321b26}.campaign-photo{position:relative;min-width:0;min-height:0}.campaign-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:64% 50%}.quick-nav{display:grid;grid-template-columns:repeat(4,1fr);border-bottom:1px solid var(--line)}.quick-nav a{text-align:center;padding:23px 5px;line-height:1.5}.quick-nav a+a{border-left:1px solid var(--line)}.quick-nav span,.quick-nav small{display:block}.quick-nav span{font-weight:700}.quick-nav small{color:var(--muted);font-size:13px}.quick-nav a:hover,.shelf-heading a:hover{color:var(--pink)}.shop-shelf{padding-block:64px 20px}.shelf-heading{display:flex;align-items:end;justify-content:space-between;gap:12px;margin-bottom:21px}.shelf-heading h2{font-size:clamp(25px,3.5vw,44px);line-height:1.2;letter-spacing:-.07em}.shelf-heading a{font-size:14px;white-space:nowrap;border-bottom:1px solid currentColor}.shelf-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.shelf-card{background:#efebe7;overflow:hidden}.shelf-card img{width:100%;aspect-ratio:1;object-fit:cover;object-position:62% 50%;transition:filter .2s}.shelf-card:hover img{filter:brightness(.92)}.shelf-card div{padding:13px 14px 17px}.shelf-card span{font-size:13px;color:var(--muted)}.shelf-card h3{font-size:17px}.shelf-card strong{font-size:16px}.brand-story{padding-bottom:96px}
+@media(max-width:700px){.campaign{grid-template-columns:1fr;min-height:0}.campaign-photo{order:-1;aspect-ratio:1.7}.campaign-copy{padding:28px 24px 36px}.campaign h1{font-size:clamp(42px,8vw,61px);margin:13px 0 15px}.quick-nav small{display:none}.quick-nav a{padding-block:15px;font-size:14px}.shelf-grid{grid-template-columns:repeat(2,1fr)}.shop-shelf{padding-top:42px}}
+</style>
+<style>
+.film{min-height:100svh;position:relative;isolation:isolate;display:grid;place-items:center;overflow:hidden;color:#fffaf7;background:#341b29;text-align:center}
+.film-photo,.film::after{position:absolute;inset:0;width:100%;height:100%;z-index:-2;object-fit:cover}
+.film-photo{filter:url(#film-water);transform:scale(1.02)}
+.film::after{content:"";z-index:-1;background:linear-gradient(160deg,#24101d75,#24101d18 48%,#24101da3),#2e142b26}
+.film-content{padding:40px 24px;animation:film-enter .9s .15s both}
+.film-name{font:500 clamp(46px,12vw,170px)/1 var(--sans);letter-spacing:.12em;padding-left:.12em}
+.film-tagline{margin:20px 0 35px;font-size:14px;letter-spacing:.2em}
+.film-link{display:inline-grid;place-items:center;min-height:52px;padding:0 34px;border:1px solid #fffaf7b0;background:#29152052;transition:background .25s}
+.film-link:hover,.film-link:focus-visible{background:#fffaf7;color:#2e1925}
+@keyframes film-enter{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+#home-title{font:500 clamp(48px,7.4vw,108px)/.95 "Instrument Serif",Georgia,serif;letter-spacing:-.045em}
+.home-feature{display:grid;grid-template-columns:1fr 1fr;align-items:stretch;background:#eee6e2;scroll-margin-top:20px}
+.home-feature figure{min-height:365px;position:relative}.home-feature img{position:absolute;width:100%;height:100%;object-fit:cover}
+.feature-copy{padding:clamp(30px,6vw,95px);align-self:center}.feature-copy h2{font:500 clamp(29px,4.2vw,58px)/1.25 var(--serif);letter-spacing:-.065em}.feature-copy p:not(.brand-kicker){margin-top:18px;color:var(--muted);max-width:28em}
+.shop-shelf{padding-block:clamp(58px,8vw,110px)}
+@media(max-width:700px){.home-feature{grid-template-columns:1fr}.home-feature figure{min-height:0;aspect-ratio:1.4}.feature-copy{padding:35px 25px 43px}.film-photo{object-position:53% center}}
+@media(prefers-reduced-motion:reduce){.film-photo,.film-content{animation:none}.film-photo{filter:none;transform:none}html{scroll-behavior:auto}}
+</style><style>
+.header:not(.with-cart) .cart-link{display:none}.header nav a{white-space:nowrap}
+.el-lockup{display:inline-flex;align-items:center;gap:10px;justify-self:start;font-family:"DM Sans","Noto Sans KR",sans-serif;font-weight:700;color:#423039}.el-symbol{display:inline-flex;align-items:center}.film-content>.el-symbol{margin-bottom:18px}.film-content>.el-symbol svg{width:clamp(44px,6vw,75px);height:auto}
+.el-editorial{display:grid;grid-template-columns:58% 42%;background:#eee8e2;min-height:clamp(520px,50vw,760px)}.el-editorial figure{position:relative}.el-editorial img,.el-product-image img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.el-editorial img{object-position:52% 50%}.el-editorial-copy{padding:clamp(28px,5vw,78px);align-self:center}.el-editorial #home-title{font-size:clamp(58px,9vw,136px);line-height:.87;color:#4c2d3d}.el-editorial h1 em{color:#805168;font-weight:400}.el-editorial-copy p{margin:32px 0 23px;font-size:15px}.el-link{display:inline-block;border-bottom:1px solid currentColor;padding-bottom:3px;font-size:14px}.el-link:hover{color:var(--pink)}
+.el-story{display:grid;grid-template-columns:1fr 1.12fr;align-items:center;gap:clamp(38px,8vw,125px);padding-block:clamp(65px,10vw,150px)}.el-story figure{aspect-ratio:1.19;overflow:hidden}.el-story img{width:100%;height:100%;object-fit:cover}.el-label{font:700 12px/1.5 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:#865467;margin-bottom:18px}.el-story h2{font:500 clamp(38px,5vw,70px)/1.25 var(--serif);letter-spacing:-.08em}.el-story-copy>p:last-child{margin-top:24px;max-width:27em;color:var(--muted)}
+.el-product{display:grid;grid-template-columns:1.15fr 1fr;background:#efe3e8}.el-product-image{position:relative;min-height:clamp(320px,43vw,650px);overflow:hidden}.el-product-image img{transition:transform .35s}.el-product-image:hover img{transform:scale(1.025)}.el-product-copy{padding:clamp(28px,7vw,96px);align-self:center}.el-product-copy h2{font:400 clamp(43px,6vw,90px)/.95 "Instrument Serif",Georgia,serif;color:#4c2d3d}.el-product-copy h2+p{margin:20px 0 24px}
+@media(max-width:800px){.header nav{gap:18px}.el-editorial{grid-template-columns:52% 48%}.el-editorial #home-title{font-size:clamp(57px,9vw,100px)}}
+@media(max-width:575px){.header{grid-template-columns:auto 1fr;gap:12px}.header nav{display:flex;justify-self:end;gap:14px}.header.with-cart{grid-template-columns:auto 1fr}.header.with-cart nav{display:none}.el-lockup{gap:6px;letter-spacing:.15em!important;font-size:18px}.el-lockup svg{width:22px;height:22px}.el-editorial,.el-story,.el-product{grid-template-columns:1fr}.el-editorial{min-height:0}.el-editorial figure{aspect-ratio:1.29}.el-editorial-copy{padding:34px 24px 43px}.el-editorial-copy p{margin:24px 0 17px}.el-story{gap:27px}.el-story figure{aspect-ratio:1.5}.el-product-image{min-height:0;aspect-ratio:1.37}.el-product-copy{padding:34px 24px 42px}}
+</style>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+#brand-view{color:#23494b;font-family:Montserrat,"Noto Sans KR",sans-serif}
+.bs-split,.bs-values{display:grid;grid-template-columns:1fr 1fr;align-items:center}.bs-split{background:#e7f9f9;align-items:stretch}
+.bs-split figure{position:relative;min-height:clamp(430px,43vw,690px)}.bs-split img{position:absolute;width:100%;height:100%;object-fit:cover}
+.bs-copy{align-self:center;padding:clamp(32px,7vw,105px)}.bs-copy h1{font-size:clamp(54px,7vw,105px);font-weight:600;line-height:1;letter-spacing:-.07em}
+.bs-copy h2,.bs-values h2{font-size:clamp(34px,4.4vw,64px);letter-spacing:-.07em;line-height:1.23}
+.bs-copy h1+p,.bs-copy h2+p,.bs-copy a{margin-top:23px}.bs-label{font-size:12px;font-weight:600;letter-spacing:.18em;color:#147579;margin-bottom:18px}
+.bs-values{gap:clamp(30px,7vw,100px);padding-block:clamp(60px,9vw,135px)}.bs-values p+p{margin-top:16px}
+.bs-glow{background:#f1e5e8;color:#482e3a}.bs-glow .bs-label{color:#805168}
+@media(max-width:680px){.bs-split,.bs-values{grid-template-columns:1fr}.bs-split figure{min-height:0;aspect-ratio:1.42;order:-1}.bs-copy{padding:36px 24px 42px}}
+</style>
+<style>
+.bs-benefits{padding-block:12px clamp(66px,9vw,130px)}.bs-benefits h2{font-size:clamp(32px,5vw,70px);line-height:1.1;letter-spacing:-.06em;margin-bottom:30px}
+.bs-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(18px,3vw,40px)}.bs-cards img{width:100%;aspect-ratio:1.32;object-fit:cover}.bs-cards h3{margin:19px 0 9px;font-size:clamp(19px,2.1vw,29px);line-height:1.25;letter-spacing:-.05em}.bs-cards p{color:#4c5051}.bs-benefits .el-link{margin-top:32px}
+@media(max-width:680px){.bs-cards{grid-template-columns:1fr;gap:30px}}
+</style><style>
+.bs-manufacturing{background:#e7f9f9;padding-block:clamp(60px,8vw,120px)}.bs-mf-head h2{font-size:clamp(33px,5vw,68px);letter-spacing:-.07em;line-height:1.19}.bs-mf-head>p:last-child{margin:22px 0 32px;max-width:45em}.bs-factories,.bs-certifications{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.bs-factories figure,.bs-certifications article{background:#fcffff}.bs-factories img{width:100%;aspect-ratio:1.65;object-fit:cover;background:#d9edec}.bs-factories figcaption{padding:18px 20px}.bs-factories strong,.bs-factories span{display:block}.bs-certifications article{display:flex;align-items:center;gap:18px;padding:18px}.bs-certifications img{width:72px;height:56px;object-fit:contain;flex:none}.bs-mf-note{font-size:13px;margin-top:12px}.bs-manufacturing h3{margin:36px 0 12px}.bs-mf-links{display:flex;gap:20px;flex-wrap:wrap;margin-top:18px}
+@media(max-width:650px){.bs-factories,.bs-certifications{grid-template-columns:1fr}}
+</style>
+<style>
+#home-view{
+  background:radial-gradient(ellipse at 92% 47%,#ead4df 0%,transparent 43%),
+             radial-gradient(ellipse at 0% 66%,#f2e4d5 0%,transparent 48%),#faf7f4;
+}
+#home-view .el-editorial{
+  background:radial-gradient(ellipse at 85% 12%,#f9f0e4 0%,transparent 62%),linear-gradient(145deg,#e9d4de,#f0e5dc 68%,#f6ecdf);
+}
+#home-view .el-product{
+  background:radial-gradient(ellipse at 95% 0%,#fcf3e7 0%,transparent 59%),linear-gradient(135deg,#e6ced9,#f0e2e6 70%,#f5e7de);
+}
+#brand-view{
+  background:radial-gradient(ellipse at 93% 39%,#ebdbeb 0%,transparent 41%),
+             radial-gradient(ellipse at 3% 45%,#d9f0ed 0%,transparent 43%),#fbf8f3;
+}
+#brand-view .bs-hero,#brand-view .bs-split{
+  background:radial-gradient(ellipse at 6% 0%,#f9f5e8 0%,transparent 62%),linear-gradient(150deg,#d3edeb,#edf5f0 66%,#f7eee7);
+}
+#brand-view .bs-manufacturing{
+  background:radial-gradient(ellipse at 96% 4%,#faf1e5 0%,transparent 52%),linear-gradient(147deg,#d8efeb,#eff5ee 72%,#e2efed);
+}
+</style>
+<style>
+.catalog-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:30px}.catalog-card{background:#f1e9eb;border:1px solid #e3d5da;display:block}.catalog-card:hover{border-color:#9d5e76}.catalog-card img{width:100%;aspect-ratio:1;object-fit:contain}.catalog-card div{padding:14px 18px 18px}.catalog-card h2{font-size:21px}.catalog-card span,.catalog-card strong{display:block}.catalog-card span{color:var(--muted)}.catalog-card strong{margin-top:4px}#catalog-view{padding-block:clamp(42px,7vw,96px)}#catalog-title{font-size:clamp(30px,5vw,58px);line-height:1.2;letter-spacing:-.065em;margin-bottom:10px}.bundle-offer{padding:14px 20px;text-align:center;background:#ead3dc;color:#652e49;font-weight:700}.thumbs [data-file="bundle"] img{object-fit:contain}
+@media(max-width:760px){.catalog-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+</style>
+<style>
+#catalog-view{width:min(1320px,calc(100% - 64px))}
+.catalog-grid{gap:26px;margin-top:28px}
+.catalog-card{background:transparent;border:0}
+.catalog-card:hover h2{text-decoration:underline;text-underline-offset:4px}
+.catalog-card .catalog-art{position:relative;isolation:isolate;overflow:hidden;aspect-ratio:1;padding:0;background:radial-gradient(ellipse at 35% 22%,#fff8f1 0%,transparent 64%),linear-gradient(151deg,#d8c4cf,#f2e2e4 66%,#d4bac5)}
+.catalog-card .catalog-art::before{content:"";position:absolute;inset:68% 0 0;z-index:-1;background:linear-gradient(160deg,#ffffff30,#52243627)}
+.catalog-art[data-boxes="2"]{background:radial-gradient(ellipse at 30% 18%,#ffebe8,transparent 65%),linear-gradient(150deg,#b87e93,#e4b5c5 64%,#b88296)}
+.catalog-art[data-boxes="3"]{background:radial-gradient(ellipse at 31% 25%,#edbdc9,transparent 65%),linear-gradient(150deg,#9f617b,#bb8da3 58%,#805167)}
+.catalog-art[data-boxes="6"]{background:radial-gradient(ellipse at 34% 22%,#c18caa,transparent 64%),linear-gradient(146deg,#614054,#8f5f7b 60%,#67445b)}
+.catalog-card .catalog-art img{width:100%;height:100%;transform:translateY(3%) scale(1.04);filter:drop-shadow(5px 10px 7px #2e102c50)}
+.catalog-card .catalog-badge{position:absolute;top:12px;right:12px;display:block;border-radius:999px;background:#6d2b4a;color:white;padding:5px 10px;font-size:12px;font-weight:700}
+.catalog-card .catalog-info{padding:13px 0 0}.catalog-info h2{font-size:clamp(14px,1.4vw,18px);line-height:1.4}.catalog-info p{color:var(--muted);font-size:13px;margin-top:4px}
+.catalog-card .catalog-prices{padding:0;margin-top:8px;display:flex;gap:5px 9px;align-items:baseline;flex-wrap:wrap}.catalog-prices strong{font-size:clamp(17px,2vw,23px);margin:0}.catalog-prices del{font-size:13px;color:var(--muted)}.catalog-prices .catalog-saving{font-size:12px;color:#8c385d}
+@media(max-width:760px){#catalog-view{width:calc(100% - 36px)}.catalog-grid{gap:25px 14px}.catalog-card .catalog-badge{top:7px;right:7px;padding:4px 8px}}
+</style>
+<style>
+#catalog-view{width:min(1040px,calc(100% - 48px))}
+#catalog-view .catalog-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(34px,6vw,76px) clamp(14px,2.4vw,28px)}
+#catalog-view .catalog-art{aspect-ratio:4/5;background:linear-gradient(180deg,#efefef,#f6f5f5 62%,#e5e2e4)}
+#catalog-view .catalog-art::before{display:none}
+#catalog-view .catalog-art img{width:100%;height:100%;object-fit:contain;transform:none;filter:none}
+#catalog-view .catalog-info{padding-top:15px}
+#catalog-view .catalog-info h2{font-size:clamp(15px,2vw,22px);font-weight:600}
+#catalog-view .catalog-prices strong{font-size:clamp(17px,2.1vw,24px)}
+@media(max-width:575px){#catalog-view{width:calc(100% - 28px)}}
+</style><style>
+.rj-story{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:clamp(24px,6vw,90px);padding-block:clamp(45px,8vw,110px)}.rj-story h2,.rj-points h2,.rj-maker h2{font:500 clamp(33px,5vw,68px)/1.2 var(--serif);letter-spacing:-.07em}.rj-story img{width:100%;aspect-ratio:1.18;object-fit:cover}.rj-story div>p:not(.eyebrow){margin:22px 0;max-width:30em}
+.rj-points{padding-block:clamp(45px,7vw,95px)}.rj-points-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(15px,3vw,35px);margin-top:26px}.rj-points-grid img,.rj-composition{width:100%;aspect-ratio:1.28;object-fit:cover}.rj-points h3{margin:15px 0 6px}.rj-points article p,.rj-story div>p:not(.eyebrow){color:var(--muted)}.rj-composition{display:grid;align-content:center;justify-items:center;background:radial-gradient(ellipse at top,#fbf2ed,#ead6e3);color:#773a59}.rj-composition strong{font-size:clamp(24px,4vw,53px);line-height:1.05}.rj-composition small{font-size:.42em}.rj-composition span+strong{margin-top:12px}.rj-composition span{font-size:14px}
+.rj-maker{background:#e6f2ee;padding-block:clamp(40px,7vw,92px)}.rj-maker h2+p{margin:16px 0}
+@media(max-width:650px){.rj-story,.rj-points-grid{grid-template-columns:1fr}.rj-points-grid{gap:30px}}
+</style><style>
+.rj-feature{display:grid;grid-template-columns:1.2fr .8fr;gap:clamp(24px,6vw,90px);align-items:center;margin-block:clamp(55px,8vw,120px)}
+.rj-feature figure,.rj-lookbook figure{overflow:hidden}.rj-feature>figure img{width:100%;aspect-ratio:1.08;object-fit:cover;object-position:center 43%}
+.rj-feature h2{font:500 clamp(36px,6vw,84px)/1.12 var(--serif);letter-spacing:-.08em;color:#4c2d3d}.rj-feature-copy>p:last-child{margin-top:20px;max-width:24em;color:var(--muted)}
+.rj-lookbook{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-bottom:clamp(55px,8vw,110px)}.rj-lookbook img{width:100%;aspect-ratio:1.19;object-fit:cover}
+.rj-ritual{grid-template-columns:1.1fr .9fr}.rj-ritual h2{font-size:clamp(32px,4.8vw,65px)}.rj-fruit{max-width:330px;margin-bottom:22px}.rj-fruit img{width:100%;aspect-ratio:1.55;object-fit:cover}.rj-maker{background:#ece8e3}
+@media(max-width:650px){.rj-feature,.rj-ritual{grid-template-columns:1fr}.rj-lookbook{gap:8px}.rj-ritual .rj-fruit{max-width:none}}
+</style>
+<style>
+.rj-skin{padding-block:clamp(48px,7vw,105px);border-top:1px solid var(--line)}
+.rj-skin h2{font:500 clamp(35px,5vw,68px)/1.18 var(--serif);letter-spacing:-.07em;color:#4c2d3d}
+.rj-skin-note{margin:13px 0 30px;color:var(--muted);font-size:14px}
+.rj-skin-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(20px,4vw,56px)}
+.rj-skin h3{font-size:17px;margin-bottom:10px}
+.rj-skin-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
+.rj-skin img{width:100%;aspect-ratio:1.12;object-fit:cover}
+.rj-skin figcaption{font-size:13px;color:var(--muted);margin-top:8px}
+.rj-manufacturing{background:linear-gradient(145deg,#f1e5e9,#f8f4ef);color:#4c2d3d}
+.rj-manufacturing .bs-label{color:#865467}
+.rj-manufacturing .bs-factories figure,.rj-manufacturing .bs-certifications article{background:#fffaf8}
+@media(max-width:650px){.rj-skin-grid{grid-template-columns:1fr;gap:26px}}
+</style>
+<style>
+.rj-skin figcaption strong,.rj-skin figcaption span{display:block}
+.rj-skin figcaption strong{font-size:12px;color:#4c2d3d;letter-spacing:.14em;margin-bottom:4px}
+.rj-manufacturing #rj-manufacturing-title{font:600 clamp(42px,7.8vw,110px)/1 var(--sans);letter-spacing:-.055em}
+.rj-ritual>figure img{aspect-ratio:1.38;object-fit:contain;background:#f1eae7}
+</style><style>.rj-ritual>.rj-model-product img{display:block;width:100%;height:auto;aspect-ratio:auto;object-fit:contain;background:none}.el-editorial #home-title{font:600 clamp(40px,5.4vw,82px)/1.02 Montserrat,"Noto Sans KR",sans-serif;letter-spacing:-.065em}
+.el-editorial #home-title em{font-style:normal;font-weight:600}
+.el-story figure{aspect-ratio:1.05}.el-story img{object-position:50% 30%}
+@media(max-width:820px){.el-editorial #home-title{font-size:clamp(40px,11vw,64px)}.el-story figure{aspect-ratio:1.2}}
+h1[tabindex="-1"]:focus,h1[tabindex="-1"]:focus-visible{outline:none}
+/* clean white theme */
+:root{--paper:#fff}
+body,header,.header{background:#fff}
+#home-view,#home-view .el-editorial,#home-view .el-product{background:#fff}
+.el-editorial{background:#fff}
+footer{background:#fff;border-top:1px solid #eee6e9}
+.rj-manufacturing{background:#fff}
+.rj-manufacturing .bs-factories figure,.rj-manufacturing .bs-certifications article{background:#faf5f7}
+.rj-manufacturing #home-manufacturing-title{font:600 clamp(42px,7.8vw,110px)/1 var(--sans);letter-spacing:-.055em}
+.formula{background:#faf5f7}
+.catalog-card{background:#fff;border-color:#eee6e9}
+#catalog-view .catalog-art,.catalog-card .catalog-art{background:#f6f6f7}
+.catalog-card .catalog-art::before{display:none}
+.catalog-card .catalog-art img{transform:none;filter:none}
+#catalog-view .catalog-art{aspect-ratio:1}
+.main-photo{background:#f6f6f7}
+.thumbs button{background:#f6f6f7}
+.main-photo{aspect-ratio:4/5}
+.main-photo img{width:100%;height:100%;object-fit:contain}
+.main-photo img.is-photo{object-fit:cover}
+.thumbs button:not([data-file="bundle"]) img{object-fit:cover}
+.foot-links{display:inline-flex;gap:22px;align-items:center}
+#catalog-view .catalog-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(12px,1.6vw,24px)}
+#catalog-view .catalog-card h2{font-size:clamp(15px,1.25vw,18px)}
+@media(max-width:760px){#catalog-view .catalog-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 12px}}
+.thumbs button{padding:4px}
+@media(min-width:761px){#catalog-view{width:min(1320px,92%);max-width:none}}
+/* one typeface for Korean and English */
+:root{--sans:"Noto Sans KR",sans-serif;--serif:"Noto Sans KR",sans-serif}
+*,*::before,*::after{font-family:"Noto Sans KR",sans-serif !important}
+/* thumbnails show the whole picture */
+.thumbs button img,.thumbs button:not([data-file="bundle"]) img{width:100%;height:auto;aspect-ratio:4/5;object-fit:contain}
+/* bundle discount banner */
+.bundle-banner{display:flex;justify-content:space-between;align-items:center;gap:24px 48px;flex-wrap:wrap;margin-top:clamp(28px,4vw,56px);padding:clamp(22px,3vw,38px) clamp(22px,4vw,54px);background:#fbeef2;border:1px solid #f0d5de;color:#4c2d3d}
+.bundle-banner[hidden]{display:none}
+.bb-eyebrow{font-size:13px;font-weight:600;letter-spacing:.08em;color:#a13f5d;margin:0 0 6px}
+.bb-save{margin:0;font-size:clamp(22px,2.6vw,34px);font-weight:500;line-height:1.2}
+.bb-save strong{font-size:clamp(34px,4.6vw,60px);font-weight:700;color:#a13f5d;letter-spacing:-.03em}
+.bb-detail{display:flex;gap:clamp(20px,3.4vw,52px);margin:0}
+.bb-detail dt{font-size:13px;color:#8a6a78;margin-bottom:4px}
+.bb-detail dd{margin:0;font-size:clamp(17px,1.7vw,22px);font-weight:600}
+.bb-detail s{font-weight:400;color:#9a8790}
+@media(max-width:640px){.bb-detail{width:100%;justify-content:space-between;gap:12px}}
+/* bundle banner v2 */
+.bundle-banner{display:block;padding:0;background:none;border:0;margin-top:clamp(28px,4vw,56px)}
+.bb-inner{position:relative;isolation:isolate;display:grid;grid-template-columns:1fr 1.05fr;align-items:center;min-height:clamp(260px,26vw,380px);overflow:hidden;color:#3f2531;
+ background:linear-gradient(98deg,#fff 0%,#fffffff2 30%,#ffffffa6 56%,#ffffff2e 100%),url("assets/detail-lookbook-pink.webp") right center/cover no-repeat}
+.bb-copy{padding:clamp(26px,4.4vw,64px)}
+.bb-eyebrow{font-size:12px;font-weight:600;letter-spacing:.24em;color:#a13f5d;margin:0 0 clamp(12px,1.6vw,22px)}
+.bb-save{margin:0;font-size:clamp(20px,2.3vw,30px);font-weight:300;line-height:1.05;letter-spacing:-.02em}
+.bb-save strong{font-size:clamp(44px,6vw,86px);font-weight:600;color:#3f2531;letter-spacing:-.045em}
+.bb-prices{display:flex;align-items:baseline;gap:12px;margin:clamp(14px,1.8vw,24px) 0 0;font-size:clamp(15px,1.4vw,19px)}
+.bb-prices s{color:#9a8790}.bb-prices span{color:#c9a3b1}.bb-prices b{font-weight:600;color:#a13f5d;font-size:1.2em}
+.bb-art{margin:0;align-self:stretch;display:grid;place-items:center;padding:clamp(4px,1vw,14px)}
+.bb-art img{width:min(100%,430px);height:auto;filter:drop-shadow(0 18px 22px #5a243c2e)}
+@media(max-width:700px){.bb-inner{grid-template-columns:1fr;background:linear-gradient(180deg,#fff 0%,#fffffff0 40%,#ffffff70 100%),url("assets/detail-lookbook-pink.webp") center bottom/cover no-repeat}.bb-art{padding:0 10px 14px}.bb-art img{width:min(86%,340px)}}
+/* brand origin */
+.bs-origin{padding-block:clamp(56px,8vw,120px)}
+.bs-origin-head{max-width:46em;margin-bottom:clamp(30px,4vw,56px)}
+.bs-origin-head h2{font-size:clamp(34px,4.4vw,64px);letter-spacing:-.07em;line-height:1.23}
+.bs-origin-head>p:last-child{margin-top:22px}
+.bs-origin-steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,2.2vw,32px)}
+.bs-origin-steps figure{margin:0 0 20px;aspect-ratio:4/5;overflow:hidden;background:#d9edec}
+.bs-origin-steps img{width:100%;height:100%;object-fit:cover}
+.bs-origin-sg{display:grid;place-content:center;gap:10px;text-align:center;color:#fff;background:linear-gradient(160deg,#f3c9d4 0%,#e7a9ba 46%,#9fcfd0 100%) !important}
+.bs-origin-sg span{font-size:clamp(22px,2.6vw,38px);font-weight:600;letter-spacing:.3em;padding-left:.3em}
+.bs-origin-sg small{font-size:12px;letter-spacing:.22em;opacity:.9}
+.bs-origin-no{font-size:12px;font-weight:600;letter-spacing:.16em;color:#147579;margin:0 0 8px}
+.bs-origin-steps h3{font-size:clamp(20px,1.9vw,26px);letter-spacing:-.04em;margin:0 0 8px}
+.bs-origin-steps li>p:last-child{margin:0;font-size:15px}
+@media(max-width:700px){.bs-origin-steps{grid-template-columns:1fr}.bs-origin-steps figure{aspect-ratio:1.5}}
+.bs-origin-sg{gap:22px;color:#23494b;background:linear-gradient(160deg,#fbeef1 0%,#f6f8f8 55%,#e3f3f3 100%) !important}
+.bs-origin-sg .sg-flag{width:min(72%,300px);height:auto;margin-inline:auto;box-shadow:0 14px 30px #23494b26,0 0 0 1px #0000000d}
+.bs-origin-sg span{font-size:clamp(15px,1.5vw,20px);letter-spacing:.32em;padding-left:.32em}
+</style></head>
+<body>
+<main id="intro-view" class="film">
+  <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
+    <defs>
+      <filter id="film-water" x="-10%" y="-10%" width="120%" height="120%" color-interpolation-filters="sRGB">
+        <feTurbulence type="turbulence" baseFrequency=".012 .028" numOctaves="1" seed="7" result="ripples"/>
+        <feOffset in="ripples" dx="0" dy="0" result="moving-ripples">
+          <animate attributeName="dx" values="-9;9;-9" dur="9s" calcMode="spline" keyTimes="0;.5;1" keySplines=".42 0 .58 1;.42 0 .58 1" repeatCount="indefinite"/>
+          <animate attributeName="dy" values="0;6;0;-6;0" dur="9s" calcMode="spline" keyTimes="0;.25;.5;.75;1" keySplines=".42 0 .58 1;.42 0 .58 1;.42 0 .58 1;.42 0 .58 1" repeatCount="indefinite"/>
+        </feOffset>
+        <feDisplacementMap in="SourceGraphic" in2="moving-ripples" scale="8" xChannelSelector="R" yChannelSelector="G"/>
+      </filter>
+    </defs>
+  </svg>
+  <video class="film-photo" id="intro-film" src="assets/video/intro-water.mp4" poster="assets/intro-water.webp" muted loop playsinline autoplay preload="auto" aria-hidden="true"></video>
+  <div class="film-content"><span class="el-symbol" aria-hidden="true"><svg viewBox="0 0 120 120" width="30" height="30"><path fill="currentColor" d="M106 65H37c1-9 8-15 17-15h36C88 33 77 23 60 23c-22 0-37 17-37 38 0 18 8 30 21 36 8 4 12 10 12 21C27 116 5 93 5 62 5 29 28 6 60 6c29 0 49 20 49 50v9zM74 118c0-23 14-36 34-39-3 22-15 37-34 39z"/></svg></span><h1 class="film-name" id="intro-title" tabindex="-1">ELIVATE</h1>
+  <p class="film-tagline" lang="en">LIVE FULLY, LIVE WELL</p>
+  <a class="film-link" href="#home">둘러보기</a></div>
+</main>
+<header class="header" hidden><a class="wordmark el-lockup" href="#home" aria-label="엘리베이트 홈"><span class="el-symbol" aria-hidden="true"><svg viewBox="0 0 120 120" width="30" height="30"><path fill="currentColor" d="M106 65H37c1-9 8-15 17-15h36C88 33 77 23 60 23c-22 0-37 17-37 38 0 18 8 30 21 36 8 4 12 10 12 21C27 116 5 93 5 62 5 29 28 6 60 6c29 0 49 20 49 50v9zM74 118c0-23 14-36 34-39-3 22-15 37-34 39z"/></svg></span><span>ELIVATE</span></a><nav aria-label="주 메뉴"><a href="#brand">브랜드 스토리</a><a href="#catalog">제품</a></nav><button class="head-link cart-link" type="button" id="cart-open">장바구니 <span id="cart-count">0</span></button></header>
+<main id="home-view" hidden>
+
+<section class="el-film" aria-label="리쥬글래스 PDRN 브랜드 필름">
+  <video id="home-film" src="assets/video/home-film.mp4" poster="assets/video/home-film-poster.jpg" muted loop playsinline preload="metadata" aria-label="유리 구슬과 물결, 모델이 나오는 리쥬글래스 PDRN 브랜드 필름"></video>
+</section>
+
+<section class="el-editorial" aria-labelledby="home-title">
+  <figure><img src="assets/home-editorial-rose.webp" alt="맑은 유리와 물빛 사이에 놓인 핑크 장미"></figure>
+  <div class="el-editorial-copy">
+    <h1 id="home-title" tabindex="-1" lang="en">Live fully,<br><em>live well.</em></h1>
+    <p>하루를 여는 맑은 빛, 나를 돌보는 작은 습관.</p>
+    <a class="el-link" href="#brand">브랜드 스토리</a>
+  </div>
+</section>
+<section class="el-story wrap" id="brand-preview" aria-labelledby="brand-preview-title">
+  <div class="el-story-copy">
+    <p class="el-label" lang="en">Wellness &amp; Beauty</p>
+    <h2 id="brand-preview-title">나를 돌보는<br>매일의 감각.</h2>
+    <p>엘리베이트는 웰니스와 뷰티가 만나는 일상의 순간을 살핍니다. 아침에 창문을 여는 것처럼, 나를 돌보는 일도 작은 습관에서 시작합니다.</p>
+  </div>
+  <figure><img src="assets/home-story-model.webp" alt="핑크 스틱을 손에 들고 미소 짓는 모델" loading="lazy"></figure>
+</section>
+<section class="bs-manufacturing rj-manufacturing home-manufacturing" aria-labelledby="home-manufacturing-title">
+ <div class="wrap">
+  <div class="bs-mf-head"><h2 id="home-manufacturing-title" lang="en">MADE IN KOREA</h2>
+   <p>리쥬글래스 PDRN은 국내 제조사 Kolmar BNH에서 만듭니다. Kolmar BNH는 원자재 입고부터 완제품까지 생산 단계별로 품질을 관리하고, 성분과 미생물 등을 분석하는 설비를 운영합니다.</p>
+  </div>
+  <div class="bs-factories">
+   <figure><a href="https://kolmarbnh.co.kr/business/domestic/" target="_blank" rel="noopener"><img src="assets/kolmar-sejong.jpg" alt="Kolmar BNH 세종3공장 전경" loading="lazy"></a><figcaption><strong>세종3공장</strong><span>분말·정제 전용 설비와 자동화 포장라인</span></figcaption></figure>
+   <figure><a href="https://kolmarbnh.co.kr/business/domestic/" target="_blank" rel="noopener"><img src="assets/kolmar-eumseong.jpg" alt="Kolmar BNH 음성공장 전경" loading="lazy"></a><figcaption><strong>음성공장</strong><span>분말, 액상, 캡슐 등을 생산하는 복합 생산시설</span></figcaption></figure>
+  </div>
+  <p class="bs-mf-note">사진 출처 · Kolmar BNH 공식 국내사업장 소개. 사진은 제조사의 대표 생산시설입니다.</p>
+  <h3>제조시설의 품질·식품안전 인증</h3>
+  <div class="bs-certifications">
+   <article><img src="assets/kolmar-gmp.webp" alt="" loading="lazy"><div><strong>GMP</strong><p>세종3공장 · 우수건강기능식품 제조 및 품질관리 기준</p></div></article>
+   <article><img src="assets/kolmar-haccp.png" alt="" loading="lazy"><div><strong>Global HACCP</strong><p>세종3공장·음성공장 · 글로벌 식품안전관리인증기준</p></div></article>
+  </div>
+  <p class="bs-mf-note">인증 표기는 각 제조시설에 적용됩니다.</p>
+  <div class="bs-mf-links"><a class="el-link" href="https://kolmarbnh.co.kr/business/quality/" target="_blank" rel="noopener">Kolmar BNH 품질관리</a><a class="el-link" href="https://kolmarbnh.co.kr/pr/news/?mod=document&amp;uid=1039" target="_blank" rel="noopener">글로벌 HACCP 인증 발표</a></div>
+ </div>
+</section>
+</main>
+
+<main id="brand-view" hidden>
+<section class="bs-split"><div class="bs-copy"><p class="bs-label">ELIVATE BRAND STORY</p><h1 id="brand-title" tabindex="-1" lang="en">Live fully,<br>live well.</h1><p>나를 돌보는 일이 자연스러운 일상이 되도록.</p></div><figure><img src="assets/brand-story-morning.webp" alt="아침 햇살 속에서 물 한 잔을 드는 사람"></figure></section>
+<section class="bs-values wrap"><h2>매일 챙길 수 있는<br>웰니스.</h2><div><p>엘리베이트는 건강한 일상을 위한 제품을 만듭니다. 무엇을 담았는지 이해하기 쉽고, 내 생활 속에서 꾸준히 챙길 수 있어야 한다고 생각합니다.</p><p>원료와 품질에서 시작한 고민은 손에 잡히는 패키지와 쓰기 편한 형태까지 이어집니다. 엘리베이트의 심볼에 담긴 ‘e’와 잎은 우리가 추구하는 균형을 보여줍니다.</p></div></section>
+
+<section class="bs-origin wrap" aria-labelledby="bs-origin-title">
+ <div class="bs-origin-head"><p class="bs-label" lang="en">OUR ORIGIN</p>
+  <h2 id="bs-origin-title">싱가포르에서 시작해,<br>한국에서 완성합니다.</h2>
+  <p>엘리베이트는 싱가포르에서 출발한 브랜드입니다. 한국의 전문가들이 연구·개발하고 포뮬레이션을 설계했으며, 국내 최고 수준의 제조시설에서 만든 프리미엄 제품입니다.</p>
+ </div>
+ <ol class="bs-origin-steps">
+  <li><figure class="bs-origin-sg"><svg class="sg-flag" viewBox="0 0 300 200" role="img" aria-label="싱가포르 국기"><rect width="300" height="200" fill="#fff"/><rect width="300" height="100" fill="#ee2536"/><circle cx="65.3" cy="50" r="37.6" fill="#fff"/><circle cx="79.2" cy="50" r="35.5" fill="#ee2536"/><g fill="#fff"><polygon points="91.00,20.10 92.89,25.90 98.99,25.90 94.05,29.49 95.94,35.30 91.00,31.71 86.06,35.30 87.95,29.49 83.01,25.90 89.11,25.90"/><polygon points="111.45,34.96 113.33,40.76 119.44,40.76 114.50,44.35 116.39,50.15 111.45,46.56 106.51,50.15 108.40,44.35 103.46,40.76 109.56,40.76"/><polygon points="103.64,58.99 105.52,64.80 111.63,64.80 106.69,68.39 108.57,74.19 103.64,70.60 98.70,74.19 100.59,68.39 95.65,64.80 101.75,64.80"/><polygon points="78.36,58.99 80.25,64.80 86.35,64.80 81.41,68.39 83.30,74.19 78.36,70.60 73.43,74.19 75.31,68.39 70.37,64.80 76.48,64.80"/><polygon points="70.55,34.96 72.44,40.76 78.54,40.76 73.60,44.35 75.49,50.15 70.55,46.56 65.61,50.15 67.50,44.35 62.56,40.76 68.67,40.76"/></g></svg><span lang="en">SINGAPORE</span></figure>
+   <p class="bs-origin-no" lang="en">01 · Singapore</p><h3>브랜드의 출발</h3><p>엘리베이트는 싱가포르에서 시작한 웰니스 브랜드입니다.</p></li>
+  <li><figure><img src="assets/origin-lab.webp" alt="핑크빛 용액이 담긴 플라스크와 비커가 놓인 깨끗한 연구실 실험대 (이미지 컷)" loading="lazy"></figure>
+   <p class="bs-origin-no" lang="en">02 · Korea R&amp;D</p><h3>연구개발과 포뮬레이션</h3><p>한국의 전문가들이 원료를 고르고 배합을 설계합니다.</p></li>
+  <li><figure><img src="assets/origin-factory.webp" alt="스테인리스 탱크가 늘어선 깨끗한 제조 설비 내부 (이미지 컷)" loading="lazy"></figure>
+   <p class="bs-origin-no" lang="en">03 · Made in Korea</p><h3>프리미엄 제조</h3><p>국내 최고 수준의 제조시설에서 생산합니다.</p></li>
+ </ol>
+</section>
+<section class="bs-benefits wrap" aria-labelledby="bs-benefits-title">
+ <h2 id="bs-benefits-title">리쥬글래스 PDRN</h2>
+ <div class="bs-cards">
+   <article><img src="assets/brand-water-detail.webp" alt="물방울이 맺힌 장밋빛 유리 표면" loading="lazy"><h3>유리처럼 맑은 글로우</h3><p>빛을 받은 유리의 맑은 반짝임에서 영감을 얻은 이너뷰티 루틴.</p></article>
+   <article><img src="assets/brand-pink-detail.webp" alt="옅은 시안 배경에 놓인 원료 콘셉트 정물" loading="lazy"><h3>한 포에 담은 주요 원료</h3><p>1포에 저분자 피쉬 콜라겐 1,000 mg과 비타민 C 100 mg. 연어이리분말도 함께 담았습니다.</p></article>
+   <article><img src="assets/brand-product.webp" alt="리쥬글래스 PDRN 흰색과 핑크색 스틱포 두 개" loading="lazy"><h3>매일 챙기기 쉬운 한 포</h3><p>한 상자에 2 g 스틱 30포. 개별 포장이라 가방에 넣어 다니며 챙기기 편해요.</p></article>
+ </div>
+ <a class="el-link" href="#product">리쥬글래스 PDRN 자세히 보기</a>
+</section>
+
+<section class="bs-manufacturing" aria-labelledby="manufacturing-title">
+ <div class="wrap">
+  <div class="bs-mf-head"><p class="bs-label" lang="en">Manufactured in Korea</p>
+   <h2 id="manufacturing-title">리쥬글래스 PDRN을 만드는 곳,<br>Kolmar BNH.</h2>
+   <p>리쥬글래스 PDRN은 국내 제조사 Kolmar BNH에서 만듭니다. Kolmar BNH는 원자재 입고부터 완제품까지 생산 단계별로 품질을 관리하고, 성분과 미생물 등을 분석하는 설비를 운영합니다.</p>
+  </div>
+  <div class="bs-factories">
+   <figure><a href="https://kolmarbnh.co.kr/business/domestic/" target="_blank" rel="noopener"><img src="assets/kolmar-sejong.jpg" alt="Kolmar BNH 세종3공장 전경" loading="lazy"></a><figcaption><strong>세종3공장</strong><span>분말·정제 전용 설비와 자동화 포장라인</span></figcaption></figure>
+   <figure><a href="https://kolmarbnh.co.kr/business/domestic/" target="_blank" rel="noopener"><img src="assets/kolmar-eumseong.jpg" alt="Kolmar BNH 음성공장 전경" loading="lazy"></a><figcaption><strong>음성공장</strong><span>분말, 액상, 캡슐 등을 생산하는 복합 생산시설</span></figcaption></figure>
+  </div>
+  <p class="bs-mf-note">사진 출처 · Kolmar BNH 공식 국내사업장 소개. 사진은 제조사의 대표 생산시설입니다.</p>
+  <h3>제조시설의 품질·식품안전 인증</h3>
+  <div class="bs-certifications">
+   <article><img src="assets/kolmar-gmp.webp" alt="" loading="lazy"><div><strong>GMP</strong><p>세종3공장 · 우수건강기능식품 제조 및 품질관리 기준</p></div></article>
+   <article><img src="assets/kolmar-haccp.png" alt="" loading="lazy"><div><strong>Global HACCP</strong><p>세종3공장·음성공장 · 글로벌 식품안전관리인증기준</p></div></article>
+  </div>
+  <p class="bs-mf-note">인증 표기는 각 제조시설에 적용됩니다.</p>
+  <div class="bs-mf-links"><a class="el-link" href="https://kolmarbnh.co.kr/business/quality/" target="_blank" rel="noopener">Kolmar BNH 품질관리</a><a class="el-link" href="https://kolmarbnh.co.kr/pr/news/?mod=document&amp;uid=1039" target="_blank" rel="noopener">글로벌 HACCP 인증 발표</a></div>
+ </div>
+</section>
+</main>
+<main id="catalog-view" class="wrap" hidden><h1 id="catalog-title" tabindex="-1">리쥬글래스 PDRN</h1><div class="catalog-grid"><a class="catalog-card" href="#product-1"><div class="catalog-art" data-boxes="1"><img data-bundle-image="1" width="900" height="900" alt=""></div><div class="catalog-info"><h2>리쥬글래스 PDRN · 1박스</h2><p>총 30포</p><div class="catalog-prices"><strong>55,000원</strong></div></div></a><a class="catalog-card" href="#product-2"><div class="catalog-art" data-boxes="2"><img data-bundle-image="2" width="900" height="900" alt=""></div><div class="catalog-info"><h2>리쥬글래스 PDRN · 2박스</h2><p>총 60포</p><div class="catalog-prices"><strong>99,000원</strong></div></div></a><a class="catalog-card" href="#product-3"><div class="catalog-art" data-boxes="3"><img data-bundle-image="3" width="900" height="900" alt=""></div><div class="catalog-info"><h2>리쥬글래스 PDRN · 3박스</h2><p>총 90포</p><div class="catalog-prices"><strong>139,000원</strong></div></div></a><a class="catalog-card" href="#product-6"><div class="catalog-art" data-boxes="6"><img data-bundle-image="6" width="900" height="900" alt=""></div><div class="catalog-info"><h2>리쥬글래스 PDRN · 6박스</h2><p>총 180포</p><div class="catalog-prices"><strong>249,000원</strong></div></div></a></div></main>
+<main id="detail-view" hidden><div class="bundle-offer" id="bundle-offer" role="status" hidden></div><div class="wrap breadcrumb"><a href="#home">홈</a><span aria-hidden="true">/</span><a href="#catalog">제품</a><span aria-hidden="true">/</span><span>리쥬글래스 PDRN</span></div>
+<section class="product wrap" id="product"><div class="gallery"><figure class="main-photo"><img id="pack-photo" src="assets/package-sticks.webp" width="1100" height="1100" alt="단상자와 스틱 구성" loading="lazy"></figure><div class="thumbs" aria-label="패키지 사진 선택"><button type="button" aria-pressed="true" aria-label="박스 구성 사진" data-file="bundle" data-label="선택한 박스 구성"><img alt="" width="90" height="90"></button><button type="button" aria-pressed="false" aria-label="테이블 연출 사진" data-file="table" data-label="창가 테이블 위에 놓인 리쥬글래스 PDRN 단상자와 스틱"><img src="assets/gallery-table.webp" alt="" loading="lazy"></button><button type="button" aria-pressed="false" aria-label="구성품 사진" data-file="open" data-label="열린 단상자와 스틱, 석류와 베리"><img src="assets/gallery-open.webp" alt="" loading="lazy"></button><button type="button" aria-pressed="false" aria-label="모델 사진" data-file="model" data-label="스틱을 먹는 모델과 단상자"><img src="assets/gallery-model.webp" alt="" loading="lazy"></button></div></div><div class="product-copy"><p class="eyebrow">ELIVATE · REJUGLASS PDRN</p><h1 id="product-title" tabindex="-1">리쥬글래스 PDRN</h1><p>저분자 피쉬 콜라겐과 비타민 C, 연어알 추출분말을 한 포에 담았습니다.</p><div class="price"><strong id="base-price"></strong><span>시연용 가격</span></div>
+<div class="order"><label for="pack">구성 선택</label><select id="pack"></select>
+<div class="order-row"><span>수량</span><div class="stepper"><button type="button" id="minus" aria-label="수량 줄이기">−</button><output id="quantity">1</output><button type="button" id="plus" aria-label="수량 늘리기">+</button></div></div>
+<div class="order-row total"><span>총 상품금액</span><strong id="total" aria-live="polite"></strong></div>
+<div class="actions"><button type="button" id="add">장바구니</button><button type="button" id="buy">구매하기</button></div>
+<p class="demo-note">구매 체험용 페이지입니다. 실제 주문과 결제는 진행되지 않습니다.</p></div></div></section>
+<nav class="detail-nav" aria-label="상품 상세 메뉴"><div class="wrap"><a href="#story">상품 상세</a><a href="#formula">성분</a><a href="#guide">섭취 안내</a><a href="#details">상품 정보</a></div></nav>
+
+<aside class="bundle-banner wrap" id="bundle-banner" aria-live="polite" hidden>
+ <div class="bb-inner">
+  <div class="bb-copy"><p class="bb-eyebrow" id="bb-eyebrow"></p><p class="bb-save"><strong id="bb-save"></strong> 할인</p><p class="bb-prices"><s id="bb-regular"></s><span aria-hidden="true">→</span><b id="bb-price"></b></p></div>
+  <figure class="bb-art"><img id="bb-image" alt="" width="900" height="900"></figure>
+ </div>
+</aside>
+<section class="rj-feature wrap" id="story" aria-labelledby="rj-feature-title">
+ <figure><img src="assets/detail-feature.webp" alt="부드러운 햇살을 받은 모델의 포트레이트" loading="lazy"></figure>
+ <div class="rj-feature-copy"><p class="eyebrow">ELIVATE</p><h2 id="rj-feature-title">나를 챙기는<br>하루 한 포.</h2><p>리쥬글래스 PDRN. 유리 위로 스치는 빛에서 영감을 받은 석류맛 이너뷰티 스틱.</p></div>
+</section>
+<section class="rj-lookbook wrap" aria-label="리쥬글래스 제품 화보">
+ <figure><img src="assets/detail-lookbook-product.webp" alt="리쥬글래스 PDRN 패키지" loading="lazy"></figure>
+ <figure><img src="assets/detail-lookbook-pink.webp" alt="장밋빛 유리가 석재 위에 드리운 빛" loading="lazy"></figure>
+</section>
+<section class="formula" id="formula"><div class="wrap"><p class="eyebrow">THE FORMULA</p><h2>한 포에 담은 성분</h2><div class="formula-grid"><article><h3>저분자 피쉬 콜라겐</h3><p class="metric">1,000 <small>mg</small></p><p>1포 기준 · 평균 분자량 500 Da 이하</p></article><article><h3>비타민 C</h3><p class="metric">100 <small>mg</small></p><p>1포 기준</p></article><article><h3>그 밖의 주요 원재료</h3><p class="ingredients">연어알 추출분말<br>히알루론산 · 가수분해 엘라스틴</p></article></div></div></section>
+
+<section class="rj-feature rj-ritual wrap" aria-labelledby="rj-ritual-title">
+ <figure class="rj-model-product"><img src="assets/detail-model-product.png" width="1024" height="1053" alt="리쥬글래스 PDRN 스틱포를 손에 든 모델" loading="lazy"></figure>
+ <div class="rj-feature-copy"><figure class="rj-fruit"><img src="assets/detail-peach.webp" alt="밝은 석재 위에 놓인 석류" loading="lazy"></figure><h2 id="rj-ritual-title">상큼한 석류맛.</h2><p>석류맛 분말은 거의 흰색에 가까운 아주 옅은 핑크빛이에요. 2 g 스틱을 뜯어 분말 그대로 섭취하세요.</p></div>
+</section>
+<section class="rj-skin wrap" aria-labelledby="rj-skin-title">
+ <h2 id="rj-skin-title">피부 톤과 결의 대비</h2>
+ <p class="rj-skin-note">연출 비교 이미지 · BEFORE / AFTER는 피부 표현의 대비를 뜻하며, 제품 섭취 효과와 무관합니다.</p>
+ <div class="rj-skin-grid">
+  <article><h3>칙칙한 톤과 맑은 톤</h3><div class="rj-skin-pair"><figure><img src="assets/skin-tone-dull.webp" alt="칙칙하고 얼룩져 보이는 피부 톤" loading="lazy"><figcaption><strong lang="en">BEFORE</strong><span>칙칙하고 얼룩져 보이는 피부 톤</span></figcaption></figure><figure><img src="assets/skin-tone-clear.webp" alt="맑고 균일해 보이는 피부 톤" loading="lazy"><figcaption><strong lang="en">AFTER</strong><span>맑고 균일해 보이는 피부 톤</span></figcaption></figure></div></article>
+  <article><h3>건조한 결감과 유리알 광택</h3><div class="rj-skin-pair"><figure><img src="assets/skin-texture-dry.webp" alt="각질이 도드라지는 건조한 결" loading="lazy"><figcaption><strong lang="en">BEFORE</strong><span>각질이 도드라지는 건조한 결</span></figcaption></figure><figure><img src="assets/skin-texture-gloss.webp" alt="유리알처럼 반사되는 매끈한 광택" loading="lazy"><figcaption><strong lang="en">AFTER</strong><span>유리알처럼 반사되는 매끈한 광택</span></figcaption></figure></div></article>
+ </div>
+</section><section class="bs-manufacturing rj-manufacturing" aria-labelledby="rj-manufacturing-title">
+ <div class="wrap">
+  <div class="bs-mf-head"><h2 id="rj-manufacturing-title" lang="en">MADE IN KOREA</h2>
+   <p>리쥬글래스 PDRN은 국내 제조사 Kolmar BNH에서 만듭니다. Kolmar BNH는 원자재 입고부터 완제품까지 생산 단계별로 품질을 관리하고, 성분과 미생물 등을 분석하는 설비를 운영합니다.</p>
+  </div>
+  <div class="bs-factories">
+   <figure><a href="https://kolmarbnh.co.kr/business/domestic/" target="_blank" rel="noopener"><img src="assets/kolmar-sejong.jpg" alt="Kolmar BNH 세종3공장 전경" loading="lazy"></a><figcaption><strong>세종3공장</strong><span>분말·정제 전용 설비와 자동화 포장라인</span></figcaption></figure>
+   <figure><a href="https://kolmarbnh.co.kr/business/domestic/" target="_blank" rel="noopener"><img src="assets/kolmar-eumseong.jpg" alt="Kolmar BNH 음성공장 전경" loading="lazy"></a><figcaption><strong>음성공장</strong><span>분말, 액상, 캡슐 등을 생산하는 복합 생산시설</span></figcaption></figure>
+  </div>
+  <p class="bs-mf-note">사진 출처 · Kolmar BNH 공식 국내사업장 소개. 사진은 제조사의 대표 생산시설입니다.</p>
+  <h3>제조시설의 품질·식품안전 인증</h3>
+  <div class="bs-certifications">
+   <article><img src="assets/kolmar-gmp.webp" alt="" loading="lazy"><div><strong>GMP</strong><p>세종3공장 · 우수건강기능식품 제조 및 품질관리 기준</p></div></article>
+   <article><img src="assets/kolmar-haccp.png" alt="" loading="lazy"><div><strong>Global HACCP</strong><p>세종3공장·음성공장 · 글로벌 식품안전관리인증기준</p></div></article>
+  </div>
+  <p class="bs-mf-note">인증 표기는 각 제조시설에 적용됩니다.</p>
+  <div class="bs-mf-links"><a class="el-link" href="https://kolmarbnh.co.kr/business/quality/" target="_blank" rel="noopener">Kolmar BNH 품질관리</a><a class="el-link" href="https://kolmarbnh.co.kr/pr/news/?mod=document&amp;uid=1039" target="_blank" rel="noopener">글로벌 HACCP 인증 발표</a></div>
+ </div>
+</section>
+<section class="guide wrap" id="guide"><div><p class="eyebrow">DAILY RITUAL</p><h2>하루에 한 번,<br>한 포씩.</h2></div><div><p>하루 한 번 스틱 1포를 뜯어 분말을 그대로 섭취하세요. 물 없이도 간편하게 챙길 수 있어요.</p><p>직사광선을 피해 서늘하고 건조한 곳에 보관하고, 영유아와 어린이의 손이 닿지 않도록 해주세요.</p></div></section>
+<section class="story wrap pack-story" aria-labelledby="pack-story-title"><p class="eyebrow">THE STICK</p><h2 id="pack-story-title">작게 포장한 30번의 루틴</h2><p>스틱마다 2 g씩 개별 포장했습니다.<br>집에서는 한 상자를 두고, 외출할 때는 필요한 만큼 챙기세요.</p><dl class="pack-facts"><div><dt>한 포</dt><dd>2 g</dd></div><div><dt>한 상자</dt><dd>30포</dd></div><div><dt>총 내용량</dt><dd>60 g</dd></div></dl></section>
+<section class="ingredient-notes wrap" aria-labelledby="ingredient-notes-title"><h2 id="ingredient-notes-title">원재료를 더 자세히</h2><dl><div><dt>연어알 추출분말</dt><dd>캐나다산 연어알 추출분말을 사용했습니다.</dd></div><div><dt>히알루론산 · 가수분해 엘라스틴</dt><dd>히알루론산과 프랑스산 가수분해 엘라스틴을 함께 담았습니다.</dd></div><div><dt>석류향 · 크랜베리</dt><dd>석류향분말과 칠레산 크랜베리 농축액을 사용한 분말이 들어 있습니다.</dd></div></dl></section><section class="faq wrap" id="faq"><h2>자주 묻는 질문</h2><details><summary>물에 타서 먹어야 하나요?</summary><p>스틱을 열어 분말을 그대로 섭취할 수 있어요.</p></details><details><summary>임신·수유 중에도 섭취할 수 있나요?</summary><p>임신·수유 중이거나 특정 질환이 있는 경우 섭취 전 제품 원재료를 확인하고 전문가와 상담해 주세요.</p></details>
+<details><summary>한 상자에 몇 포가 들어 있나요?</summary><p>개별 포장된 2 g 스틱 30포가 들어 있습니다. 총 내용량은 60 g입니다.</p></details>
+<details><summary>어떤 원재료가 들어 있나요?</summary><p>저분자 피쉬 콜라겐, 비타민 C, 연어알 추출분말, 히알루론산, 가수분해 엘라스틴 등이 들어 있습니다. 전체 원재료는 아래 상품 정보에서 확인하실 수 있습니다.</p></details>
+<details><summary>어떻게 보관하나요?</summary><p>직사광선을 피해 서늘하고 건조한 곳에 보관하세요.</p></details></section>
+<section class="details wrap" id="details"><h2>제품 정보</h2><details><summary>원재료명</summary><p>저분자 피쉬 콜라겐, 분말결정포도당, 자일리톨(감미료), 비타민 C, 석류향분말(덱스트린, 향료, 아라비아검, 프로필렌글리콜, 트리아세틴), 연어알추출분말(캐나다산), 이산화규소, 크랜베리농축분말(크랜베리농축액, 칠레산), 효소처리스테비아(감미료), 구연산, DL-사과산, 히알루론산, 가수분해 엘라스틴(프랑스산).</p></details><details><summary>영양정보</summary><table><caption>1포(2 g) 기준</caption><tbody><tr><th scope="row">열량</th><td>7 kcal</td></tr><tr><th scope="row">나트륨</th><td>5 mg</td></tr><tr><th scope="row">탄수화물</th><td>0.8 g</td></tr><tr><th scope="row">당류</th><td>0.6 g</td></tr><tr><th scope="row">지방 · 트랜스지방 · 포화지방</th><td>각 0 g</td></tr><tr><th scope="row">콜레스테롤</th><td>0 mg</td></tr><tr><th scope="row">단백질</th><td>1 g</td></tr><tr><th scope="row">비타민 C</th><td>100 mg</td></tr></tbody></table></details><details><summary>식품 유형 및 제조 정보</summary><p>식품 유형 · 기타가공품<br>제조원 · Kolmar BNH<br>제조국 · 대한민국<br>포장재질(내면) · 폴리에틸렌(PE)<br>소비기한 · 제품 포장 별도 표기 확인</p></details><details><summary>섭취 시 주의사항</summary><p>하루 권장 섭취량을 초과하지 마세요. 특정 질환이 있거나 알레르기가 있는 분은 섭취 전 원재료를 확인해 주세요. 알레르기 관련 제조시설 안내는 아래 포장 표기에서 확인할 수 있습니다.</p><a class="under-link" href="assets/package-label.webp">패키지 표기 보기</a></details></section>
+</main>
+<footer hidden><div class="wrap foot"><div><a class="wordmark" href="#home">ELIVATE</a><p>LIVE FULLY, LIVE WELL</p></div><span class="foot-links"><a class="under-link" href="#intro">처음 화면</a><a class="under-link" href="#home">브랜드 홈</a></span></div></footer>
+<dialog id="shop-dialog" aria-labelledby="dialog-title"><form method="dialog"><button class="close" aria-label="닫기">×</button></form><p class="eyebrow">ELIVATE</p><h2 id="dialog-title"></h2><div id="dialog-body"></div><p class="demo-note">이 화면은 구매 체험용입니다. 실제 주문과 결제는 진행되지 않습니다.</p><div id="dialog-actions" class="actions"></div></dialog>
+<script>
+const packs = [
+  { boxes: 1, price: 55000 },
+  { boxes: 2, price: 99000 },
+  { boxes: 3, price: 139000 },
+  { boxes: 6, price: 249000 }
+];
+const byId = id => document.getElementById(id);
+const won = value => value.toLocaleString('ko-KR') + '원';
+const cart = new Map();
+const pack = byId('pack');
+const dialog = byId('shop-dialog');
+let quantity = 1;
+const picked = () => packs[Number(pack.value)];
+
+packs.forEach(({ boxes, price }, index) => {
+  const unit = boxes > 1 ? ' · 박스당 약 ' + won(Math.round(price / boxes)) : '';
+  pack.add(new Option(boxes + '박스 · ' + boxes * 30 + '포 · ' + won(price) + unit, index));
+});
+byId('base-price').textContent = won(packs[0].price);
+function updatePrice() {
+  byId('quantity').textContent = quantity;
+  byId('minus').disabled = quantity <= 1;
+  byId('plus').disabled = quantity >= 10;
+  byId('total').textContent = won(picked().price * quantity);
+}
+function changeQuantity(amount) {
+  quantity = Math.max(1, Math.min(10, quantity + amount));
+  updatePrice();
+}
+byId('minus').addEventListener('click', () => changeQuantity(-1));
+byId('plus').addEventListener('click', () => changeQuantity(1));
+updatePrice();
+
+function dialogButton(label, action) {
+  const button = document.createElement('button');
+  button.type = 'button';
+  button.textContent = label;
+  button.addEventListener('click', action);
+  return button;
+}
+function showOrder(title, entries, editable = false) {
+  byId('dialog-title').textContent = title;
+  const body = byId('dialog-body');
+  body.replaceChildren();
+  const actions = byId('dialog-actions');
+  actions.replaceChildren(dialogButton('닫기', () => dialog.close()));
+  let total = 0;
+  entries.forEach(([item, count]) => {
+    const row = document.createElement('div');
+    row.className = 'cart-row';
+    const label = document.createElement('span');
+    label.textContent = item.boxes + '박스 구성 × ' + count + '개';
+    row.append(label);
+    total += item.price * count;
+    if (editable) row.append(dialogButton('삭제', () => {
+      cart.delete(item);
+      updateCart();
+      showCart();
+    }));
+    body.append(row);
+  });
+  const summary = document.createElement('p');
+  summary.textContent = entries.length ? '총 상품금액 ' + won(total) : '장바구니가 비어 있습니다.';
+  body.append(summary);
+  if (editable && entries.length) actions.append(dialogButton('구매하기', () => showOrder('주문 미리보기', [...cart])));
+  if (!dialog.open) dialog.showModal();
+}
+function updateCart() {
+  byId('cart-count').textContent = [...cart.values()].reduce((sum, count) => sum + count, 0);
+}
+const showCart = () => showOrder('장바구니', [...cart], true);
+byId('cart-open').addEventListener('click', showCart);
+byId('add').addEventListener('click', () => {
+  const item = picked();
+  cart.set(item, (cart.get(item) || 0) + quantity);
+  updateCart();
+  showCart();
+});
+byId('buy').addEventListener('click', () => showOrder('주문 미리보기', [[picked(), quantity]]));
+
+
+</script><script>
+const galleryImages = {"sticks": "assets/package-sticks.webp", "table": "assets/gallery-table.webp", "open": "assets/gallery-open.webp", "model": "assets/gallery-model.webp"};
+const image = document.querySelector('#pack-photo');
+const thumbnails = document.querySelectorAll('.thumbs button');
+thumbnails.forEach(button => {
+  button.addEventListener('click', () => {
+    image.src = button.dataset.file === 'bundle' ? bundleImages[picked().boxes] : galleryImages[button.dataset.file];
+    image.classList.toggle('is-photo', button.dataset.file !== 'bundle');
+    image.alt = button.dataset.file === 'bundle' ? picked().boxes + '박스 정면 구성' : button.dataset.label;
+    thumbnails.forEach(thumbnail => {
+      thumbnail.setAttribute('aria-pressed', String(thumbnail === button));
+    });
+  });
+});
+
+const bundleImages = {"1": "assets/bundle-1.webp", "2": "assets/bundle-2.webp", "3": "assets/bundle-3.webp", "6": "assets/bundle-6.webp"};
+
+document.querySelectorAll('[data-bundle-image]').forEach(img => {
+  img.src = bundleImages[img.dataset.bundleImage];
+});
+const bundleThumbnail = document.querySelector('[data-file="bundle"]');
+function updateBundle() {
+  const item = picked();
+  const offer = byId('bundle-offer');
+  offer.hidden = item.boxes === 1;
+  offer.textContent = item.boxes === 1 ? '' : item.boxes + '박스 구매 시 ' + won(packs[0].price * item.boxes - item.price) + ' 절약';
+  byId('base-price').textContent = won(item.price);
+  const banner = byId('bundle-banner');
+  if (banner) {
+    const regular = packs[0].price * item.boxes, saved = regular - item.price;
+    banner.hidden = item.boxes === 1;
+    byId('bb-eyebrow').textContent = item.boxes + ' BOX SET · ' + Math.round(saved / regular * 100) + '% OFF';
+    byId('bb-save').textContent = won(saved);
+    byId('bb-regular').textContent = won(regular);
+    byId('bb-price').textContent = won(item.price);
+    byId('bb-image').src = bundleImages[item.boxes];
+    byId('bb-image').alt = '리쥬글래스 PDRN ' + item.boxes + '박스';
+  }
+  bundleThumbnail.querySelector('img').src = bundleImages[item.boxes];
+  bundleThumbnail.click();
+  updatePrice();
+}
+function selectBundle(boxes) {
+  pack.value = packs.findIndex(item => item.boxes === boxes);
+  quantity = 1;
+  updateBundle();
+}
+pack.addEventListener('change', () => {
+  history.replaceState(null, '', '#product-' + picked().boxes);
+  updateBundle();
+});
+
+const homeView = document.querySelector('#home-view');
+const brandView = document.querySelector('#brand-view');
+const detailView = document.querySelector('#detail-view');
+const detailSections = new Set(['product', 'story', 'formula', 'guide', 'faq', 'details']);
+const introView = document.querySelector('#intro-view');
+const siteHeader = document.querySelector('.header');
+const siteFooter = document.querySelector('footer');
+function showView() {
+  const section = location.hash.slice(1);
+  const intro = !section || section === 'intro';
+  const bundle = /^product-(1|2|3|6)$/.exec(section);
+  const catalog = section === 'catalog';
+  const detail = Boolean(bundle) || detailSections.has(section);
+  byId('catalog-view').hidden = !catalog;
+  if (bundle || section === 'product') selectBundle(bundle ? Number(bundle[1]) : 1);
+  const brand = section === 'brand';
+  brandView.hidden = !brand;
+  introView.hidden = !intro;
+  homeView.hidden = intro || detail || brand || catalog;
+  detailView.hidden = !detail;
+  siteHeader.hidden = siteFooter.hidden = intro;
+  siteHeader.classList.toggle('with-cart', detail);
+  const introFilm = byId('intro-film');
+  if (introFilm) { if (!intro || matchMedia('(prefers-reduced-motion: reduce)').matches) introFilm.pause(); else introFilm.play().catch(() => {}); }
+  const homeFilm = byId('home-film');
+  if (homeFilm) { if (homeView.hidden) homeFilm.pause(); else homeFilm.play().catch(() => {}); }
+  document.title = detail ? '리쥬글래스 PDRN | ELIVATE' : brand ? '브랜드 스토리 | ELIVATE' : 'ELIVATE | 엘리베이트';
+  if (intro || brand || catalog || bundle || section === 'home' || section === 'product') {
+    window.scrollTo({ top: 0, behavior: 'instant' });
+    if (location.hash) document.getElementById(intro ? 'intro-title' : detail ? 'product-title' : brand ? 'brand-title' : catalog ? 'catalog-title' : 'home-title')?.focus({ preventScroll: true });
+  } else {
+    document.getElementById(section)?.scrollIntoView();
+  }
+}
+window.addEventListener('hashchange', showView);
+// 새로 열거나 새로고침하면 항상 인트로부터 보여준다
+if (location.hash && location.hash !== '#intro') location.hash = 'intro';
+showView();
+
+</script></body></html>
