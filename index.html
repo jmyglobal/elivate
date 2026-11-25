@@ -263,6 +263,12 @@ footer{background:#fff;border-top:1px solid #eee6e9}
 .pack-badges>img{width:clamp(46px,5vw,64px);height:auto;aspect-ratio:1;object-fit:contain;transform:none !important;mix-blend-mode:normal}
 .made-kr{display:inline-flex;align-items:center;gap:8px;font-size:clamp(10px,.95vw,12px);font-weight:700;letter-spacing:.14em;color:#3f2531;white-space:nowrap}
 .made-kr .kr-flag{width:clamp(30px,3.2vw,40px);height:auto;box-shadow:0 0 0 1px #0000001f}
+#catalog-view .catalog-card .catalog-art{position:relative}
+#catalog-view .catalog-card .catalog-art .card-badges{display:flex;padding:0;top:clamp(6px,.9vw,14px);left:clamp(6px,.9vw,14px);gap:8px}
+#catalog-view .catalog-card .catalog-art .card-badges>img{width:clamp(28px,2.9vw,42px);height:auto;aspect-ratio:1;object-fit:contain;transform:none;filter:none}
+#catalog-view .catalog-card .catalog-art .card-badges .made-kr{display:inline-flex;gap:6px;font-size:clamp(8px,.72vw,10.5px);letter-spacing:.12em}
+#catalog-view .catalog-card .catalog-art .card-badges .kr-flag{width:clamp(20px,2vw,28px);height:auto}
+#catalog-view .catalog-art[data-boxes="6"] img[data-bundle-image]{transform:translateY(7%)}
 </style></head>
 <body>
 <main id="intro-view" class="film">
@@ -543,6 +549,11 @@ thumbnails.forEach(button => {
 
 const bundleImages = {"1": "assets/bundle-1.webp", "2": "assets/bundle-2.webp", "3": "assets/bundle-3.webp", "6": "assets/bundle-6.webp"};
 
+document.querySelectorAll('.catalog-art').forEach(art => {
+  const badges = document.querySelector('.main-photo .pack-badges').cloneNode(true);
+  badges.classList.add('card-badges');
+  art.prepend(badges);
+});
 document.querySelectorAll('[data-bundle-image]').forEach(img => {
   img.src = bundleImages[img.dataset.bundleImage];
 });
