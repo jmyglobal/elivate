@@ -274,6 +274,8 @@ footer{background:#fff;border-top:1px solid #eee6e9}
 .header.on-intro .wordmark,.header.on-intro .cart-link{visibility:hidden}
 .header.on-intro nav a{color:#fffaf7;text-shadow:0 1px 10px #24101d80;letter-spacing:.06em}
 .header.on-intro nav a:hover{opacity:.75}
+.header nav a[aria-current="page"]{color:var(--pink);font-weight:600}
+.header.on-intro nav a[aria-current="page"]{color:#fffaf7}
 </style></head>
 <body>
 <main id="intro-view" class="film">
@@ -294,7 +296,7 @@ footer{background:#fff;border-top:1px solid #eee6e9}
   <p class="film-tagline" lang="en">LIVE FULLY, LIVE WELL</p>
   <a class="film-link" href="#home">둘러보기</a></div>
 </main>
-<header class="header" hidden><a class="wordmark el-lockup" href="#home" aria-label="엘리베이트 홈"><span class="el-symbol" aria-hidden="true"><svg viewBox="0 0 120 120" width="30" height="30"><path fill="currentColor" d="M106 65H37c1-9 8-15 17-15h36C88 33 77 23 60 23c-22 0-37 17-37 38 0 18 8 30 21 36 8 4 12 10 12 21C27 116 5 93 5 62 5 29 28 6 60 6c29 0 49 20 49 50v9zM74 118c0-23 14-36 34-39-3 22-15 37-34 39z"/></svg></span><span>ELIVATE</span></a><nav aria-label="주 메뉴"><a href="#brand" lang="en">Brand Story</a><a href="#catalog" lang="en">Products</a></nav><button class="head-link cart-link" type="button" id="cart-open">장바구니 <span id="cart-count">0</span></button></header>
+<header class="header" hidden><a class="wordmark el-lockup" href="#home" aria-label="엘리베이트 홈"><span class="el-symbol" aria-hidden="true"><svg viewBox="0 0 120 120" width="30" height="30"><path fill="currentColor" d="M106 65H37c1-9 8-15 17-15h36C88 33 77 23 60 23c-22 0-37 17-37 38 0 18 8 30 21 36 8 4 12 10 12 21C27 116 5 93 5 62 5 29 28 6 60 6c29 0 49 20 49 50v9zM74 118c0-23 14-36 34-39-3 22-15 37-34 39z"/></svg></span><span>ELIVATE</span></a><nav aria-label="주 메뉴"><a href="#home" lang="en">Home</a><a href="#brand" lang="en">Brand Story</a><a href="#catalog" lang="en">Products</a></nav><button class="head-link cart-link" type="button" id="cart-open">장바구니 <span id="cart-count">0</span></button></header>
 <main id="home-view" hidden>
 
 <section class="el-film" aria-label="리쥬글래스 PDRN 브랜드 필름">
@@ -617,6 +619,8 @@ function showView() {
   siteHeader.hidden = false;
   siteFooter.hidden = intro;
   siteHeader.classList.toggle('on-intro', intro);
+  const currentNav = intro ? '' : brand ? '#brand' : (catalog || detail) ? '#catalog' : '#home';
+  siteHeader.querySelectorAll('nav a').forEach(a => { if (a.getAttribute('href') === currentNav) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });
   siteHeader.classList.toggle('with-cart', detail);
   const introFilm = byId('intro-film');
   if (introFilm) { if (!intro || matchMedia('(prefers-reduced-motion: reduce)').matches) introFilm.pause(); else introFilm.play().catch(() => {}); }
