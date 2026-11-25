@@ -247,6 +247,14 @@ footer{background:#fff;border-top:1px solid #eee6e9}
 .bs-origin-sg{gap:22px;color:#23494b;background:linear-gradient(160deg,#fbeef1 0%,#f6f8f8 55%,#e3f3f3 100%) !important}
 .bs-origin-sg .sg-flag{width:min(72%,300px);height:auto;margin-inline:auto;box-shadow:0 14px 30px #23494b26,0 0 0 1px #0000000d}
 .bs-origin-sg span{font-size:clamp(15px,1.5vw,20px);letter-spacing:.32em;padding-left:.32em}
+/* 2026-11-25 pm: full home film, white gallery, larger default product shot */
+.el-film video{max-height:none;object-fit:contain}
+.main-photo,.thumbs button{background:#fff}
+.thumbs button{border-color:#eee6e9}
+.main-photo img[data-boxes="1"]{transform:scale(2.0)}
+.main-photo img[data-boxes="2"]{transform:scale(1.5)}
+.main-photo img[data-boxes="3"],.main-photo img[data-boxes="6"]{transform:scale(1.04)}
+.thumbs [data-file="bundle"] img{transform:scale(1.15)}
 </style></head>
 <body>
 <main id="intro-view" class="film">
@@ -323,9 +331,9 @@ footer{background:#fff;border-top:1px solid #eee6e9}
  <ol class="bs-origin-steps">
   <li><figure class="bs-origin-sg"><svg class="sg-flag" viewBox="0 0 300 200" role="img" aria-label="싱가포르 국기"><rect width="300" height="200" fill="#fff"/><rect width="300" height="100" fill="#ee2536"/><circle cx="65.3" cy="50" r="37.6" fill="#fff"/><circle cx="79.2" cy="50" r="35.5" fill="#ee2536"/><g fill="#fff"><polygon points="91.00,20.10 92.89,25.90 98.99,25.90 94.05,29.49 95.94,35.30 91.00,31.71 86.06,35.30 87.95,29.49 83.01,25.90 89.11,25.90"/><polygon points="111.45,34.96 113.33,40.76 119.44,40.76 114.50,44.35 116.39,50.15 111.45,46.56 106.51,50.15 108.40,44.35 103.46,40.76 109.56,40.76"/><polygon points="103.64,58.99 105.52,64.80 111.63,64.80 106.69,68.39 108.57,74.19 103.64,70.60 98.70,74.19 100.59,68.39 95.65,64.80 101.75,64.80"/><polygon points="78.36,58.99 80.25,64.80 86.35,64.80 81.41,68.39 83.30,74.19 78.36,70.60 73.43,74.19 75.31,68.39 70.37,64.80 76.48,64.80"/><polygon points="70.55,34.96 72.44,40.76 78.54,40.76 73.60,44.35 75.49,50.15 70.55,46.56 65.61,50.15 67.50,44.35 62.56,40.76 68.67,40.76"/></g></svg><span lang="en">SINGAPORE</span></figure>
    <p class="bs-origin-no" lang="en">01 · Singapore</p><h3>브랜드의 출발</h3><p>엘리베이트는 싱가포르에서 시작한 웰니스 브랜드입니다.</p></li>
-  <li><figure><img src="assets/origin-lab.webp" alt="핑크빛 용액이 담긴 플라스크와 비커가 놓인 깨끗한 연구실 실험대 (이미지 컷)" loading="lazy"></figure>
+  <li><figure><img src="assets/origin-lab.webp" alt="흰 가운을 입은 연구원이 분말 원료를 계량하는 연구실과 샬레에 담긴 원료" loading="lazy"></figure>
    <p class="bs-origin-no" lang="en">02 · Korea R&amp;D</p><h3>연구개발과 포뮬레이션</h3><p>한국의 전문가들이 원료를 고르고 배합을 설계합니다.</p></li>
-  <li><figure><img src="assets/origin-factory.webp" alt="스테인리스 탱크가 늘어선 깨끗한 제조 설비 내부 (이미지 컷)" loading="lazy"></figure>
+  <li><figure><img src="assets/origin-factory.webp" alt="클린룸에서 스틱 포장 설비를 점검하는 작업자" loading="lazy"></figure>
    <p class="bs-origin-no" lang="en">03 · Made in Korea</p><h3>프리미엄 제조</h3><p>국내 최고 수준의 제조시설에서 생산합니다.</p></li>
  </ol>
 </section>
@@ -516,6 +524,7 @@ thumbnails.forEach(button => {
   button.addEventListener('click', () => {
     image.src = button.dataset.file === 'bundle' ? bundleImages[picked().boxes] : galleryImages[button.dataset.file];
     image.classList.toggle('is-photo', button.dataset.file !== 'bundle');
+    image.dataset.boxes = button.dataset.file === 'bundle' ? picked().boxes : '';
     image.alt = button.dataset.file === 'bundle' ? picked().boxes + '박스 정면 구성' : button.dataset.label;
     thumbnails.forEach(thumbnail => {
       thumbnail.setAttribute('aria-pressed', String(thumbnail === button));
