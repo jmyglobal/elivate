@@ -269,6 +269,11 @@ footer{background:#fff;border-top:1px solid #eee6e9}
 #catalog-view .catalog-card .catalog-art .card-badges .made-kr{display:inline-flex;gap:6px;font-size:clamp(8px,.72vw,10.5px);letter-spacing:.12em}
 #catalog-view .catalog-card .catalog-art .card-badges .kr-flag{width:clamp(20px,2vw,28px);height:auto}
 #catalog-view .catalog-art[data-boxes="6"] img[data-bundle-image]{transform:translateY(7%)}
+/* category menu over the intro screen */
+.header.on-intro{position:absolute;top:0;left:0;right:0;z-index:6;background:transparent;border-bottom:0;color:#fffaf7}
+.header.on-intro .wordmark,.header.on-intro .cart-link{visibility:hidden}
+.header.on-intro nav a{color:#fffaf7;text-shadow:0 1px 10px #24101d80;letter-spacing:.06em}
+.header.on-intro nav a:hover{opacity:.75}
 </style></head>
 <body>
 <main id="intro-view" class="film">
@@ -609,7 +614,9 @@ function showView() {
   introView.hidden = !intro;
   homeView.hidden = intro || detail || brand || catalog;
   detailView.hidden = !detail;
-  siteHeader.hidden = siteFooter.hidden = intro;
+  siteHeader.hidden = false;
+  siteFooter.hidden = intro;
+  siteHeader.classList.toggle('on-intro', intro);
   siteHeader.classList.toggle('with-cart', detail);
   const introFilm = byId('intro-film');
   if (introFilm) { if (!intro || matchMedia('(prefers-reduced-motion: reduce)').matches) introFilm.pause(); else introFilm.play().catch(() => {}); }
