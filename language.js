@@ -290,7 +290,7 @@ function applyCopy() {
   document.getElementById('detail-host').lang = language;
   const selector = document.getElementById('site-language');
   selector.setAttribute('aria-label', localize('언어 선택', 'Choose language'));
-  const film = document.getElementById('detail-host').shadowRoot.querySelector('.product-intro-film');
+  const film = document.getElementById('product-film');
   if (film.textTracks.length) film.textTracks[0].mode = inEnglish() ? 'showing' : 'disabled';
   for (const bind of copyBindings) bind();
   for (const button of selector.querySelectorAll('button[data-lang]')) {
