@@ -1,4 +1,5 @@
 const englishCopy = {
+  "사슬 길이를 단순화한 모식도입니다. 실제 분자 크기 비율과 다릅니다.": "Chain lengths are illustrated schematically and are not to scale.",
   "엘리베이트 리쥬글래스 PDRN. 콜라겐과 비타민 C를 담은 30포 스틱 제품을 만나보세요.": "Elivate Rejuglass PDRN. Discover 30 individually wrapped sticks with collagen and vitamin C.",
   "ELIVATE | 리쥬글래스 PDRN": "ELIVATE | Rejuglass PDRN",
   "둘러보기": "Explore",
@@ -289,13 +290,6 @@ function applyCopy() {
   document.getElementById('detail-host').lang = language;
   const selector = document.getElementById('site-language');
   selector.setAttribute('aria-label', localize('언어 선택', 'Choose language'));
-  const homeVideo = document.getElementById('home-film');
-  const source = 'assets/video/' + localize('home-film.mp4', 'home-film-en.webm');
-  if (homeVideo.getAttribute('src') !== source) {
-    const resume = !homeVideo.paused;
-    homeVideo.src = source;
-    if (resume) homeVideo.play().catch(() => {});
-  }
   const film = document.getElementById('detail-host').shadowRoot.querySelector('.product-intro-film');
   if (film.textTracks.length) film.textTracks[0].mode = inEnglish() ? 'showing' : 'disabled';
   for (const bind of copyBindings) bind();
